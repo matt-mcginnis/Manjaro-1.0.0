@@ -15,7 +15,7 @@
 
 # Replace pacman.conf with personal configuration
 sudo rm /etc/pacman.conf
-sudo cp ~/GitHub/Manjaro/etc/pacman.conf /etc/
+sudo cp ~/Github/Manjaro-1.0.0/etc/pacman.conf /etc/
 
 # Create mirror list
 sudo pacman-mirrors --geoip

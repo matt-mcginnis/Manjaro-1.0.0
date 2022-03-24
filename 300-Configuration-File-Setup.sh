@@ -34,13 +34,16 @@
 
 #############################
 ##### home file changes #####
-#############################
+############################a
+
+# Add .vimrc to ~/
+#cp ~/Github/Manjaro-1.0.0/home/.vimrc ~/
 
 # Add .Xmodmap to ~/
 #cp ~/GitHub/Manjaro/home/.Xmodmap ~/
 
 # Add .Xresources to ~/
-#cp ~/GitHub/Manjaro/home/.Xresources ~/
+cp ~/Github/Manjaro-1.0.0/home/.Xresources ~/
 
 # Add .XresourcesHiDPI to ~/
 #cp ~/GitHub/Manjaro/home/.XresourcesHiDPI ~/
@@ -55,20 +58,17 @@
 #####################
 
 # Install zsh-autosuggestions
-cd ~/.oh-my-zsh/custom/plugins
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
 # Install zsh-syntax-highlighting
-cd ~/.oh-my-zsh/custom/plugins
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
 # Install zsh-vim-mode
-cd ~/.oh-my-zsh/custom/plugins
 git clone https://github.com/softmoth/zsh-vim-mode ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-vim-mode
 
 # Copy custom .zshrc
-rm ~/.zshrc
-cp ~/GitHub/Manjaro/home/.zshrc ~/.zshrc
+#rm ~/.zshrc
+#cp ~/Github/Manjaro-1.0.0/home/.zshrc ~/.zshrc
 
 ###################################
 ##### Various System Settings #####
@@ -81,11 +81,4 @@ cp ~/GitHub/Manjaro/home/.zshrc ~/.zshrc
 #sudo systemctl enable syncthing@matt.service
 
 # Set time to local-time (Dual Boot with Windows)
-#sudo timedatectl set-local-rtc 1 --adjust-system-clock
-
-###############################
-##### Generate Heroku Key #####
-###############################
-
-#sudo ssh-keygen -t rsa -C "mcginnisma90@gmail.com"
-#sudo heroku keys:add
+sudo timedatectl set-local-rtc 1 --adjust-system-clock
