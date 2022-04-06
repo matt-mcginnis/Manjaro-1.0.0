@@ -29,3 +29,5 @@ xnoremap J _
 xnoremap L $
 xnoremap H {
 xnoremap K }
+
+syntax on
