@@ -30,12 +30,6 @@ sudo pacman -Syyu
 # Install code
 sudo pacman -S code
 
-# Install compton
-sudo pacman -S compton
-
-# Install feh
-sudo pacman -S feh
-
 # Install github-cli
 sudo pacman -S github-cli
 
@@ -49,17 +43,5 @@ sudo pacman -S gvim
 # Install pyenv
 sudo pacman -S pyenv
 
-# Install pip
-sudo pacman -S python-pip
-
-# Install rxvt-unicode
-sudo pacman -S rxvt-unicode
-
-# Install ttf-font-awesome
-sudo pacman -S ttf-font-awesome
-
 # Install qutebrowser
 sudo pacman -S qutebrowser
-
-# Install zsh and zsh-completions
-sudo pacman -S zsh zsh-completions
