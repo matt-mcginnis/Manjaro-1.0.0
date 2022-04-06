@@ -1,9 +1,5 @@
 "Vim Configuration
 
-inoremap ,, <Esc>
-nnoremap ,, <Esc>
-vnoremap ,, <Esc>
-
 """"""""""""""""""""""""
 " Normal Mode Remappings
 """"""""""""""""""""""""
