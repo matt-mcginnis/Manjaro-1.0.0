@@ -7,3 +7,6 @@
 sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 
 git clone git@github.com:jeffreytse/zsh-vi-mode.git ~/.oh-my-zsh/plugins
+
+sudo rm ~/.oh-my-zsh/plugins/zsh-vi-mode
+sudo cp ~/Github/Manjaro-1.0.0/zsh-plugins/zsh-vi-mode.plugin.zsh ~/.oh-my-zsh/plugins/zsh-vi-mode
