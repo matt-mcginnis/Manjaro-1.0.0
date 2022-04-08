@@ -27,11 +27,11 @@ sudo pacman -Syyu
 ##### Package Installation #####
 ################################
 
-# Install code
-sudo pacman -S code
-
 # Install github-cli
 sudo pacman -S github-cli
+
+# Install gnome-keyring (For Signing in to VS Code)
+sudo pacman -S gnome-keyring
 
 # Install gvim
 sudo pacman -S gvim
