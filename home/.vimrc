@@ -27,3 +27,4 @@ xnoremap H {
 xnoremap K }
 
 syntax on
+set number
