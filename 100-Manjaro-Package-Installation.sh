@@ -27,6 +27,9 @@ sudo pacman -Syyu
 ##### Package Installation #####
 ################################
 
+# Install base-devel (For VS Code Install)
+sudo pacman -S base-devel
+
 # Install github-cli
 sudo pacman -S github-cli
 
