@@ -9,7 +9,7 @@
 #####################
 
 # Add .vimrc to ~/
-cp ~/Github/Manjaro-1.0.0/home/.vimrc ~/
+cp home/.vimrc ~/
 
 #####################
 ##### zsh setup #####
@@ -20,10 +20,6 @@ cp -r /usr/share/zsh/plugins/zsh-autosuggestions ~/.oh-my-zsh/plugins/zsh-autosu
 
 # Copy zsh-syntax-highlighting plugin
 cp -r /usr/share/zsh/plugins/zsh-syntax-highlighting ~/.oh-my-zsh/plugins/zsh-syntax-highlighting
-
-# Copy custom .zshrc
-rm ~/.zshrc
-cp ~/Github/Manjaro-1.0.0/home/.zshrc ~/.zshrc
 
 ###################################
 ##### Various System Settings #####
