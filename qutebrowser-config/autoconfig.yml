@@ -32,3 +32,10 @@ settings:
     global: dark
   hints.chars:
     global: arstdhneio
+  url.default_page:
+    global: https://www.google.com/
+  url.searchengines:
+    global:
+      DEFAULT: https://google.com/search?q={}
+  url.start_pages:
+    global: https://www.google.com
