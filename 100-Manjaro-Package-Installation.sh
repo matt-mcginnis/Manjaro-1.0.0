@@ -39,9 +39,8 @@ sudo pacman -S gnome-keyring
 # Install gvim
 sudo pacman -S gvim
 
-##################
-### For Python ###
-##################
+# Install kio-gdrive (Google Drive)
+sudo pacman -S kio-gdrive
 
 # Install pyenv
 sudo pacman -S pyenv
