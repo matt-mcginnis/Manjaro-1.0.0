@@ -47,3 +47,6 @@ sudo pacman -S pyenv
 
 # Install qutebrowser
 sudo pacman -S qutebrowser
+
+# Install ranger
+sudo pacman -S ranger
