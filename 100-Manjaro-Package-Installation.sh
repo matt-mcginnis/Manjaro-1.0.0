@@ -50,3 +50,6 @@ sudo pacman -S qutebrowser
 
 # Install ranger
 sudo pacman -S ranger
+
+# Install unzip
+sudo pacman -S unzip
