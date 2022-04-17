@@ -61,8 +61,22 @@ xnoremap L $
 xnoremap H {
 xnoremap K }
 
+" Airline Font and Theme
 let g:airline_powerline_fonts=1
 let g:airline_theme='bubblegum'
+
+" Fugitive Shortcuts
+map <C-g>a :Git add
+map <C-g>aa :Git add --all<CR>
+map <C-g>ca :Git commit -a<CR>
+map <C-g>cl :Git clone
+map <C-g>cm :Git commit -m
+map <C-g>l :Git pull<CR>
+map <C-g>p :Git push -u origin master<CR>
+map <C-g>s :Git status<CR>
+
+" NERDTree Toggle
+map <C-n> :NERDTreeToggle<CR>
 
 syntax on
 set number
