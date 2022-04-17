@@ -42,6 +42,9 @@ sudo pacman -S gvim
 # Install kio-gdrive (Google Drive)
 sudo pacman -S kio-gdrive
 
+# Install nodejs and npm
+sudo pacman -S nodejs npm
+
 # Install pyenv
 sudo pacman -S pyenv
 
