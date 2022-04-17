@@ -62,3 +62,4 @@
 23) Update Konsole settings for splitting windows and tab movement to be like VS Code.
 24) Install Vundle: https://github.com/VundleVim/Vundle.vim
 25) Install Anki: https://aur.archlinux.org/packages/anki
+26) Install yay: https://aur.archlinux.org/yay-git.git
