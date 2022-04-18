@@ -72,7 +72,7 @@ map <C-g>ca :Git commit -a<CR>
 map <C-g>cl :Git clone
 map <C-g>cm :Git commit -m
 map <C-g>l :Git pull<CR>
-map <C-g>p :Git push -u origin master<CR>
+map <C-g>p :Git push -u origin main<CR>
 map <C-g>s :Git status<CR>
 
 " NERDTree Toggle
