@@ -39,6 +39,9 @@ sudo pacman -S gvim
 # Install kio-gdrive (Google Drive)
 sudo pacman -S kio-gdrive
 
+# Install texlive-most
+sudo pacman -S texlive-most
+
 # Install nodejs and npm
 sudo pacman -S nodejs npm
 
