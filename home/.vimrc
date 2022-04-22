@@ -25,7 +25,7 @@ Plugin 'lervag/vimtex'
 Plugin 'SirVer/ultisnips'
 
 " Snippets are separated from the engine. Add this if you want them:
-Plugin 'honza/vim-snippets'
+Plugin 'matt-mcginnis/vim-snippets'
 
 Plugin 'ycm-core/YouCompleteMe'
 
