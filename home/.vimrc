@@ -75,15 +75,12 @@ let g:airline_powerline_fonts=1
 let g:airline_theme='bubblegum'
 
 " UltiSnips Configuration
-" Trigger configuration. You need to change this to something other than <tab> if you use one of the following:
-" - https://github.com/Valloric/YouCompleteMe
-" - https://github.com/nvim-lua/completion-nvim
 let g:UltiSnipsExpandTrigger="<C-Space>"
 let g:UltiSnipsJumpForwardTrigger="<C-t>"
 let g:UltiSnipsJumpBackwardTrigger="<C-r><C-t>"
 
-" If you want :UltiSnipsEdit to split your window.
-" let g:UltiSnipsEditSplit="vertical"
+" YouCompleteMe Configuration
+let g:ycm_autoclose_preview_window_after_completion = 1
 
 " Fugitive Shortcuts
 map <C-g>a :Git add
