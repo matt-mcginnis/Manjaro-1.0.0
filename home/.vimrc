@@ -57,6 +57,10 @@ nnoremap L $
 nnoremap H {
 nnoremap K }
 
+" Remapping visual block
+nnoremap <C-b> <C-v>
+nnoremap <C-v> <C-b>
+
 """"""""""""""""""""""""
 " Visual Mode Remappings
 """"""""""""""""""""""""
@@ -69,6 +73,10 @@ xnoremap J _
 xnoremap L $
 xnoremap H {
 xnoremap K }
+
+" Remapping visual block
+xnoremap <C-b> <C-v>
+xnoremap <C-v> <C-b>
 
 " Airline Font and Theme
 let g:airline_powerline_fonts=1
