@@ -1,5 +1,6 @@
 "Vim Configuration
 
+" Vundle Configuration
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -78,6 +79,10 @@ xnoremap K }
 xnoremap <C-b> <C-v>
 xnoremap <C-v> <C-b>
 
+" Remapping paste to retain yanked content
+xnoremap p pgvy
+xnoremap P Pgvy
+
 " Airline Font and Theme
 let g:airline_powerline_fonts=1
 let g:airline_theme='bubblegum'
@@ -103,5 +108,7 @@ map <C-g>s :Git status<CR>
 " NERDTree Toggle
 map <C-n> :NERDTreeToggle<CR>
 
+" Syntax highlighting, line numbers and default tab
 syntax on
 set number
+set tabstop=4
