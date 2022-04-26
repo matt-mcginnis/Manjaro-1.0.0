@@ -106,19 +106,26 @@ let g:UltiSnipsJumpBackwardTrigger="<C-r><C-t>"
 let g:ycm_autoclose_preview_window_after_completion = 1
 
 " Fugitive Shortcuts
-map <C-g>a :Git add
-map <C-g>A :Git add --all<CR>
-map <C-g>ca :Git commit -a<CR>
-map <C-g>cl :Git clone
-map <C-g>cm :Git commit -m
-map <C-g>l :Git pull<CR>
-map <C-g>p :Git push -u origin main<CR>
-map <C-g>s :Git status<CR>
-map <C-g>d :Git diff<CR>
-map <C-g>r :Git restore
+noremap <C-g>a :Git add
+noremap <C-g>A :Git add --all<CR>
+noremap <C-g>ca :Git commit -a<CR>
+noremap <C-g>cl :Git clone
+noremap <C-g>cm :Git commit -m
+noremap <C-g>l :Git pull<CR>
+noremap <C-g>p :Git push -u origin main<CR>
+noremap <C-g>s :Git status<CR>
+noremap <C-g>d :Git diff<CR>
+noremap <C-g>r :Git restore
+
+" Python Shortcut
+noremap <C-p> :!python 
 
 " NERDTree Toggle
-map <C-n> :NERDTreeToggle<CR>
+noremap <C-n> :NERDTreeToggle<CR>
+
+" Command
+noremap <Space> :
+noremap <C-c> :!
 
 " Syntax highlighting, line numbers and default tab
 syntax on
