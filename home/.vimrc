@@ -114,6 +114,8 @@ map <C-g>cm :Git commit -m
 map <C-g>l :Git pull<CR>
 map <C-g>p :Git push -u origin main<CR>
 map <C-g>s :Git status<CR>
+map <C-g>d :Git diff<CR>
+map <C-g>r :Git restore
 
 " NERDTree Toggle
 map <C-n> :NERDTreeToggle<CR>
