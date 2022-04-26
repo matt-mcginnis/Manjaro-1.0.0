@@ -100,7 +100,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ga="git add"
-alias gaa="git add --all"
+alias gA="git add --all"
 alias gca="git commit -a"
 alias gcl="git clone"
 alias gcm="git commit -m"

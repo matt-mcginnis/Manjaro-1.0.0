@@ -107,7 +107,7 @@ let g:ycm_autoclose_preview_window_after_completion = 1
 
 " Fugitive Shortcuts
 map <C-g>a :Git add
-map <C-g>aa :Git add --all<CR>
+map <C-g>A :Git add --all<CR>
 map <C-g>ca :Git commit -a<CR>
 map <C-g>cl :Git clone
 map <C-g>cm :Git commit -m
