@@ -62,6 +62,16 @@ nnoremap K }
 nnoremap <C-b> <C-v>
 nnoremap <C-v> <C-b>
 
+nnoremap gh :wincmd k<CR>
+nnoremap gk :wincmd j<CR>
+nnoremap gj :wincmd h<CR>
+nnoremap gl :wincmd l<CR>
+
+nnoremap gH :wincmd K<CR>
+nnoremap gK :wincmd J<CR>
+nnoremap gJ :wincmd H<CR>
+nnoremap gL :wincmd L<CR>
+
 """"""""""""""""""""""""
 " Visual Mode Remappings
 """"""""""""""""""""""""
