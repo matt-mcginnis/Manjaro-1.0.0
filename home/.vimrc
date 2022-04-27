@@ -16,11 +16,12 @@ Plugin 'VundleVim/Vundle.vim'
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
-Plugin 'tpope/vim-fugitive'
 Plugin 'preservim/nerdtree'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'tpope/vim-fugitive'
 Plugin 'lervag/vimtex'
+Plugin 'ycm-core/YouCompleteMe'
 
 " Track the engine.
 Plugin 'SirVer/ultisnips'
@@ -28,7 +29,9 @@ Plugin 'SirVer/ultisnips'
 " Snippets are separated from the engine. Add this if you want them:
 Plugin 'matt-mcginnis/vim-snippets'
 
-Plugin 'ycm-core/YouCompleteMe'
+" Needs to be last for icons to show up
+Plugin 'Xuyuanp/nerdtree-git-plugin'
+Plugin 'ryanoasis/vim-devicons'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -44,6 +47,14 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""
+" Syntax highlighting, line numbers and default tab
+"""""""""""""""""""""""""""""""""""""""""""""""""""
+syntax on
+set encoding=UTF-8
+set relativenumber
+set tabstop=4
 
 """"""""""""""""""""""""
 " Normal Mode Remappings
@@ -93,18 +104,6 @@ xnoremap <C-v> <C-b>
 xnoremap p pgvy
 xnoremap P Pgvy
 
-" Airline Font and Theme
-let g:airline_powerline_fonts=1
-let g:airline_theme='bubblegum'
-
-" UltiSnips Configuration
-let g:UltiSnipsExpandTrigger="<C-Space>"
-let g:UltiSnipsJumpForwardTrigger="<C-t>"
-let g:UltiSnipsJumpBackwardTrigger="<C-r><C-t>"
-
-" YouCompleteMe Configuration
-let g:ycm_autoclose_preview_window_after_completion = 1
-
 " Fugitive Shortcuts
 noremap <C-g>a :Git add
 noremap <C-g>A :Git add --all<CR>
@@ -118,7 +117,7 @@ noremap <C-g>d :Git diff<CR>
 noremap <C-g>r :Git restore
 
 " Python Shortcut
-noremap <C-p> :!python 
+noremap <C-p> :!python
 
 " NERDTree Toggle
 noremap <C-n> :NERDTreeToggle<CR>
@@ -127,7 +126,28 @@ noremap <C-n> :NERDTreeToggle<CR>
 noremap <Space> :
 noremap <CR><Space> :!
 
-" Syntax highlighting, line numbers and default tab
-syntax on
-set number
-set tabstop=4
+" Airline Font and Theme
+let g:airline_powerline_fonts=1
+let g:airline_theme='bubblegum'
+
+" UltiSnips Configuration
+let g:UltiSnipsExpandTrigger="<C-Space>"
+let g:UltiSnipsJumpForwardTrigger="<C-t>"
+let g:UltiSnipsJumpBackwardTrigger="<C-r><C-t>"
+
+" YouCompleteMe Configuration
+let g:ycm_autoclose_preview_window_after_completion = 1
+
+" Nerdtree Icons and Git statuses
+let g:NERDTreeGitStatusIndicatorMapCustom = {
+                \ 'Modified'  :'✹',
+                \ 'Staged'    :'✚',
+                \ 'Untracked' :'✭',
+                \ 'Renamed'   :'➜',
+                \ 'Unmerged'  :'═',
+                \ 'Deleted'   :'✖',
+                \ 'Dirty'     :'✗',
+                \ 'Ignored'   :'☒',
+                \ 'Clean'     :'✔︎',
+                \ 'Unknown'   :'?',
+                \ }

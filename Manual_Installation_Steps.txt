@@ -68,3 +68,5 @@
       > pip install --user cmake
       > cd ~/.vim/bundle/YouCompleteMe
       > ./install.py
+27) Install Nerd Fonts to use with NERDTree
+    a) > yay -S nerd-fonts-complete
