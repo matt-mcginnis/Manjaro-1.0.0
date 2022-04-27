@@ -125,7 +125,7 @@ noremap <C-n> :NERDTreeToggle<CR>
 
 " Command
 noremap <Space> :
-noremap <C-c> :!
+noremap <CR><Space> :!
 
 " Syntax highlighting, line numbers and default tab
 syntax on
