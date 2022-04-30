@@ -109,3 +109,6 @@ alias gp="git push -u origin main"
 alias gs="git status"
 alias gd="git diff"
 alias gr="git restore"
+
+alias ep="python"
+alias er="ranger"

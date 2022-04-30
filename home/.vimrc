@@ -117,7 +117,10 @@ noremap <C-g>d :Git diff<CR>
 noremap <C-g>r :Git restore
 
 " Python Shortcut
-noremap <C-p> :!python
+noremap <C-e>p :!python
+
+" Ranger Shortcut
+noremap <C-e>r :!ranger
 
 " NERDTree Toggle
 noremap <C-n> :NERDTreeToggle<CR>
