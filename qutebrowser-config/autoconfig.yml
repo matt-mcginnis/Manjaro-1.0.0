@@ -38,6 +38,8 @@ settings:
       <Shift+Return>: <Return>
   colors.webpage.preferred_color_scheme:
     global: dark
+  content.register_protocol_handler:
+    https://mail.google.com?extsrc=mailto&url=%25s: true
   hints.chars:
     global: arstdhneio
   url.default_page:
