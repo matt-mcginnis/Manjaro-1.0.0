@@ -53,7 +53,7 @@ filetype plugin indent on    " required
 """""""""""""""""""""""""""""""""""""""""""""""""""
 syntax on
 set encoding=UTF-8
-set relativenumber
+set number relativenumber
 set tabstop=4
 
 """"""""""""""""""""""""
@@ -69,9 +69,19 @@ nnoremap L $
 nnoremap H {
 nnoremap K }
 
+nnoremap mt H
+nnoremap mm M
+nnoremap mb L
+
+nnoremap tt zz
+
+" Folds
+nnoremap t z
+
 " Remapping visual block
-nnoremap <C-b> <C-v>
-nnoremap <C-v> <C-b>
+nnoremap ,v <C-v>
+
+nnoremap ,, %
 
 nnoremap gh :wincmd k<CR>
 nnoremap gk :wincmd j<CR>
@@ -96,47 +106,60 @@ xnoremap L $
 xnoremap H {
 xnoremap K }
 
+xnoremap mt H
+xnoremap mm M
+xnoremap mb L
+
+xnoremap tt zz
+
+" Folds
+xnoremap t z
+
 " Remapping visual block
-xnoremap <C-b> <C-v>
-xnoremap <C-v> <C-b>
+xnoremap ,v <C-v>
 
 " Remapping paste to retain yanked content
 xnoremap p pgvy
 xnoremap P Pgvy
 
+xnoremap ,, %
+
 " Fugitive Shortcuts
-noremap <C-g>a :Git add
-noremap <C-g>A :Git add --all<CR>
-noremap <C-g>ca :Git commit -a<CR>
-noremap <C-g>cl :Git clone
-noremap <C-g>cm :Git commit -m
-noremap <C-g>l :Git pull<CR>
-noremap <C-g>p :Git push -u origin main<CR>
-noremap <C-g>s :Git status<CR>
-noremap <C-g>d :Git diff<CR>
-noremap <C-g>r :Git restore
+noremap ,ga :Git add
+noremap ,gA :Git add --all<CR>
+noremap ,gca :Git commit -a<CR>
+noremap ,gcl :Git clone
+noremap ,gcm :Git commit -m
+noremap ,gl :Git pull<CR>
+noremap ,gp :Git push -u origin main<CR>
+noremap ,gs :Git status<CR>
+noremap ,gd :Git diff<CR>
+noremap ,gr :Git restore
+
+" Firefox Shortcut
+noremap ,rf :!firefox
 
 " Python Shortcut
-noremap <C-e>p :!python
+noremap ,rp :!python
 
 " Ranger Shortcut
-noremap <C-e>r :!ranger
+noremap ,rr :!ranger
 
 " NERDTree Toggle
-noremap <C-n> :NERDTreeToggle<CR>
+noremap ,n :NERDTreeToggle<CR>
 
 " Command
 noremap <Space> :
-noremap <CR><Space> :!
+noremap ,<Space> :!
 
 " Airline Font and Theme
 let g:airline_powerline_fonts=1
 let g:airline_theme='bubblegum'
 
 " UltiSnips Configuration
-let g:UltiSnipsExpandTrigger="<C-Space>"
-let g:UltiSnipsJumpForwardTrigger="<C-t>"
-let g:UltiSnipsJumpBackwardTrigger="<C-r><C-t>"
+let g:UltiSnipsExpandTrigger=",x"
+let g:UltiSnipsJumpForwardTrigger=",t"
+let g:UltiSnipsJumpBackwardTrigger=",rt"
 
 " YouCompleteMe Configuration
 let g:ycm_autoclose_preview_window_after_completion = 1

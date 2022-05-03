@@ -110,5 +110,6 @@ alias gs="git status"
 alias gd="git diff"
 alias gr="git restore"
 
+alias ef="firefox"
 alias ep="python"
 alias er="ranger"
