@@ -70,3 +70,5 @@
       > ./install.py
 27) Install Nerd Fonts to use with NERDTree
     a) > yay -S nerd-fonts-complete
+28) Add uBlock Origin and Vimium extensions to Firefox.
+    a) Copy Vimium configuration file.

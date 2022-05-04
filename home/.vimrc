@@ -1,4 +1,4 @@
-"Vim Configuration
+" Vim Configuration
 
 " Vundle Configuration
 set nocompatible              " be iMproved, required
@@ -83,16 +83,6 @@ nnoremap ,v <C-v>
 
 nnoremap ,, %
 
-nnoremap gh :wincmd k<CR>
-nnoremap gk :wincmd j<CR>
-nnoremap gj :wincmd h<CR>
-nnoremap gl :wincmd l<CR>
-
-nnoremap gH :wincmd K<CR>
-nnoremap gK :wincmd J<CR>
-nnoremap gJ :wincmd H<CR>
-nnoremap gL :wincmd L<CR>
-
 """"""""""""""""""""""""
 " Visual Mode Remappings
 """"""""""""""""""""""""
@@ -118,11 +108,25 @@ xnoremap t z
 " Remapping visual block
 xnoremap ,v <C-v>
 
+xnoremap ,, %
+
 " Remapping paste to retain yanked content
 xnoremap p pgvy
 xnoremap P Pgvy
 
-xnoremap ,, %
+
+noremap gh :wincmd k<CR>
+noremap gk :wincmd j<CR>
+noremap gj :wincmd h<CR>
+noremap gl :wincmd l<CR>
+
+noremap gH :wincmd K<CR>
+noremap gK :wincmd J<CR>
+noremap gJ :wincmd H<CR>
+noremap gL :wincmd L<CR>
+
+noremap ,sv :vsplit
+noremap ,sh :split
 
 " Fugitive Shortcuts
 noremap ,ga :Git add
