@@ -80,29 +80,9 @@ nnoremap tt zz
 " Folds
 nnoremap t z
 
-" Remapping visual block
-nnoremap <Space>v <C-v>
-
-nnoremap <Space>m %
-
-" Split Window Commands
-nnoremap <Space>wh :wincmd k<CR>
-nnoremap <Space>wk :wincmd j<CR>
-nnoremap <Space>wj :wincmd h<CR>
-nnoremap <Space>wl :wincmd l<CR>
-
-nnoremap <Space>wH :wincmd K<CR>
-nnoremap <Space>wK :wincmd J<CR>
-nnoremap <Space>wJ :wincmd H<CR>
-nnoremap <Space>wL :wincmd L<CR>
-
-" Tab Commands
-nnoremap <Space>tn :tabnew
-nnoremap <Space>tl gt
-nnoremap <Space>tj gT
-
-nnoremap <Space>sv :vsplit
-nnoremap <Space>sh :split
+" Command
+nnoremap <Space>c :
+nnoremap <Space>C :!
 
 " Fugitive Shortcuts
 nnoremap <Space>ga :Git add
@@ -116,6 +96,15 @@ nnoremap <Space>gs :Git status<CR>
 nnoremap <Space>gd :Git diff<CR>
 nnoremap <Space>gr :Git restore
 
+" Match Parentheses/Brackets
+nnoremap <Space>m %
+
+" NERDTree Toggle
+nnoremap <Space>n :NERDTreeToggle<CR>
+
+nnoremap <Space>q :q<CR>
+nnoremap <Space>Q :q!<CR>
+
 " Firefox Shortcut
 nnoremap <Space>rf :!firefox
 
@@ -125,12 +114,32 @@ nnoremap <Space>rp :!python
 " Ranger Shortcut
 nnoremap <Space>rr :!ranger
 
-" NERDTree Toggle
-nnoremap <Space>n :NERDTreeToggle<CR>
+" Split Window Commands
+nnoremap <Space>sh :wincmd k<CR>
+nnoremap <Space>sk :wincmd j<CR>
+nnoremap <Space>sj :wincmd h<CR>
+nnoremap <Space>sl :wincmd l<CR>
 
-" Command
-nnoremap ,t :
-nnoremap ,T :!
+nnoremap <Space>sH :wincmd K<CR>
+nnoremap <Space>sK :wincmd J<CR>
+nnoremap <Space>sJ :wincmd H<CR>
+nnoremap <Space>sL :wincmd L<CR>
+
+nnoremap <Space>Sv :vsplit
+nnoremap <Space>Sh :split
+
+" Tab Commands
+nnoremap <Space>tn :tabnew
+nnoremap <Space>t> :tabm +1
+nnoremap <Space>t< :tabm -1
+nnoremap <Space>tl gt
+nnoremap <Space>tj gT
+
+" Remapping visual block
+nnoremap <Space>v <C-v>
+
+nnoremap <Space>w :w<CR>
+nnoremap <Space>W :wq<CR>
 
 """"""""""""""""""""""""
 " Visual Mode Remappings
@@ -154,33 +163,13 @@ xnoremap tt zz
 " Folds
 xnoremap t z
 
-" Remapping visual block
-xnoremap <Space>v <C-v>
-
-xnoremap <Space>m %
-
 " Remapping paste to retain yanked content
 xnoremap p pgvy
 xnoremap P Pgvy
 
-" Split Window Commands
-xnoremap <Space>wh :wincmd k<CR>
-xnoremap <Space>wk :wincmd j<CR>
-xnoremap <Space>wj :wincmd h<CR>
-xnoremap <Space>wl :wincmd l<CR>
-
-xnoremap <Space>wH :wincmd K<CR>
-xnoremap <Space>wK :wincmd J<CR>
-xnoremap <Space>wJ :wincmd H<CR>
-xnoremap <Space>wL :wincmd L<CR>
-
-" Tab Commands
-xnoremap <Space>tn :tabnew
-xnoremap <Space>tl gt
-xnoremap <Space>tj gT
-
-xnoremap <Space>sv :vsplit
-xnoremap <Space>sh :split
+" Command
+xnoremap <Space>c :
+xnoremap <Space>C :!
 
 " Fugitive Shortcuts
 xnoremap <Space>ga :Git add
@@ -194,6 +183,15 @@ xnoremap <Space>gs :Git status<CR>
 xnoremap <Space>gd :Git diff<CR>
 xnoremap <Space>gr :Git restore
 
+" Match Parentheses/Brackets
+xnoremap <Space>m %
+
+" NERDTree Toggle
+xnoremap <Space>n :NERDTreeToggle<CR>
+
+xnoremap <Space>q :q<CR>
+xnoremap <Space>Q :q!<CR>
+
 " Firefox Shortcut
 xnoremap <Space>rf :!firefox
 
@@ -203,17 +201,41 @@ xnoremap <Space>rp :!python
 " Ranger Shortcut
 xnoremap <Space>rr :!ranger
 
-" NERDTree Toggle
-xnoremap <Space>n :NERDTreeToggle<CR>
+" Split Window Commands
+xnoremap <Space>sh :wincmd k<CR>
+xnoremap <Space>sk :wincmd j<CR>
+xnoremap <Space>sj :wincmd h<CR>
+xnoremap <Space>sl :wincmd l<CR>
+
+xnoremap <Space>sH :wincmd K<CR>
+xnoremap <Space>sK :wincmd J<CR>
+xnoremap <Space>sJ :wincmd H<CR>
+xnoremap <Space>sL :wincmd L<CR>
+
+xnoremap <Space>Sv :vsplit
+xnoremap <Space>Sh :split
+
+" Tab Commands
+xnoremap <Space>tn :tabnew
+xnoremap <Space>t> :tabm +1
+xnoremap <Space>t< :tabm -1
+xnoremap <Space>tl gt
+xnoremap <Space>tj gT
+
+" Remapping visual block
+xnoremap <Space>v <C-v>
+
+xnoremap <Space>w :w<CR>
+xnoremap <Space>W :wq<CR>
 
 " Airline Font and Theme
 let g:airline_powerline_fonts=1
 let g:airline_theme='tomorrow'
 
 " UltiSnips Configuration
-let g:UltiSnipsExpandTrigger="<Space>ss"
-let g:UltiSnipsJumpForwardTrigger="<Space>st"
-let g:UltiSnipsJumpBackwardTrigger="<Space>sT"
+let g:UltiSnipsExpandTrigger="<C-Space>"
+let g:UltiSnipsJumpForwardTrigger="<C-e>"
+let g:UltiSnipsJumpBackwardTrigger="<C-n>"
 
 " YouCompleteMe Configuration
 let g:ycm_autoclose_preview_window_after_completion = 1
