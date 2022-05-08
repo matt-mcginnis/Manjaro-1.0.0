@@ -21,6 +21,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tpope/vim-fugitive'
 Plugin 'lervag/vimtex'
+Plugin 'dylanaraps/wal.vim'
 Plugin 'ycm-core/YouCompleteMe'
 
 " Track the engine.
@@ -52,6 +53,7 @@ filetype plugin indent on    " required
 " Syntax highlighting, line numbers and default tab
 """""""""""""""""""""""""""""""""""""""""""""""""""
 syntax on
+colorscheme wal
 set encoding=UTF-8
 set number relativenumber
 set tabstop=4
@@ -79,9 +81,56 @@ nnoremap tt zz
 nnoremap t z
 
 " Remapping visual block
-nnoremap ,v <C-v>
+nnoremap <Space>v <C-v>
 
-nnoremap ,, %
+nnoremap <Space>m %
+
+" Split Window Commands
+nnoremap <Space>wh :wincmd k<CR>
+nnoremap <Space>wk :wincmd j<CR>
+nnoremap <Space>wj :wincmd h<CR>
+nnoremap <Space>wl :wincmd l<CR>
+
+nnoremap <Space>wH :wincmd K<CR>
+nnoremap <Space>wK :wincmd J<CR>
+nnoremap <Space>wJ :wincmd H<CR>
+nnoremap <Space>wL :wincmd L<CR>
+
+" Tab Commands
+nnoremap <Space>tn :tabnew
+nnoremap <Space>tl gt
+nnoremap <Space>tj gT
+
+nnoremap <Space>sv :vsplit
+nnoremap <Space>sh :split
+
+" Fugitive Shortcuts
+nnoremap <Space>ga :Git add
+nnoremap <Space>gA :Git add --all<CR>
+nnoremap <Space>gca :Git commit -a<CR>
+nnoremap <Space>gcl :Git clone
+nnoremap <Space>gcm :Git commit -m
+nnoremap <Space>gl :Git pull<CR>
+nnoremap <Space>gp :Git push -u origin main<CR>
+nnoremap <Space>gs :Git status<CR>
+nnoremap <Space>gd :Git diff<CR>
+nnoremap <Space>gr :Git restore
+
+" Firefox Shortcut
+nnoremap <Space>rf :!firefox
+
+" Python Shortcut
+nnoremap <Space>rp :!python
+
+" Ranger Shortcut
+nnoremap <Space>rr :!ranger
+
+" NERDTree Toggle
+nnoremap <Space>n :NERDTreeToggle<CR>
+
+" Command
+nnoremap ,t :
+nnoremap ,T :!
 
 """"""""""""""""""""""""
 " Visual Mode Remappings
@@ -106,64 +155,65 @@ xnoremap tt zz
 xnoremap t z
 
 " Remapping visual block
-xnoremap ,v <C-v>
+xnoremap <Space>v <C-v>
 
-xnoremap ,, %
+xnoremap <Space>m %
 
 " Remapping paste to retain yanked content
 xnoremap p pgvy
 xnoremap P Pgvy
 
+" Split Window Commands
+xnoremap <Space>wh :wincmd k<CR>
+xnoremap <Space>wk :wincmd j<CR>
+xnoremap <Space>wj :wincmd h<CR>
+xnoremap <Space>wl :wincmd l<CR>
 
-noremap gh :wincmd k<CR>
-noremap gk :wincmd j<CR>
-noremap gj :wincmd h<CR>
-noremap gl :wincmd l<CR>
+xnoremap <Space>wH :wincmd K<CR>
+xnoremap <Space>wK :wincmd J<CR>
+xnoremap <Space>wJ :wincmd H<CR>
+xnoremap <Space>wL :wincmd L<CR>
 
-noremap gH :wincmd K<CR>
-noremap gK :wincmd J<CR>
-noremap gJ :wincmd H<CR>
-noremap gL :wincmd L<CR>
+" Tab Commands
+xnoremap <Space>tn :tabnew
+xnoremap <Space>tl gt
+xnoremap <Space>tj gT
 
-noremap ,sv :vsplit
-noremap ,sh :split
+xnoremap <Space>sv :vsplit
+xnoremap <Space>sh :split
 
 " Fugitive Shortcuts
-noremap ,ga :Git add
-noremap ,gA :Git add --all<CR>
-noremap ,gca :Git commit -a<CR>
-noremap ,gcl :Git clone
-noremap ,gcm :Git commit -m
-noremap ,gl :Git pull<CR>
-noremap ,gp :Git push -u origin main<CR>
-noremap ,gs :Git status<CR>
-noremap ,gd :Git diff<CR>
-noremap ,gr :Git restore
+xnoremap <Space>ga :Git add
+xnoremap <Space>gA :Git add --all<CR>
+xnoremap <Space>gca :Git commit -a<CR>
+xnoremap <Space>gcl :Git clone
+xnoremap <Space>gcm :Git commit -m
+xnoremap <Space>gl :Git pull<CR>
+xnoremap <Space>gp :Git push -u origin main<CR>
+xnoremap <Space>gs :Git status<CR>
+xnoremap <Space>gd :Git diff<CR>
+xnoremap <Space>gr :Git restore
 
 " Firefox Shortcut
-noremap ,rf :!firefox
+xnoremap <Space>rf :!firefox
 
 " Python Shortcut
-noremap ,rp :!python
+xnoremap <Space>rp :!python
 
 " Ranger Shortcut
-noremap ,rr :!ranger
+xnoremap <Space>rr :!ranger
 
 " NERDTree Toggle
-noremap ,n :NERDTreeToggle<CR>
-
-" Command
-noremap <Space> :
-noremap ,<Space> :!
+xnoremap <Space>n :NERDTreeToggle<CR>
 
 " Airline Font and Theme
 let g:airline_powerline_fonts=1
-let g:airline_theme='bubblegum'
+let g:airline_theme='tomorrow'
 
 " UltiSnips Configuration
-let g:UltiSnipsExpandTrigger=",x"
-let g:UltiSnipsJumpForwardTrigger=",t"
-let g:UltiSnipsJumpBackwardTrigger=",rt"
+let g:UltiSnipsExpandTrigger="<Space>ss"
+let g:UltiSnipsJumpForwardTrigger="<Space>st"
+let g:UltiSnipsJumpBackwardTrigger="<Space>sT"
 
 " YouCompleteMe Configuration
 let g:ycm_autoclose_preview_window_after_completion = 1
