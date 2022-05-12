@@ -1,6 +1,5 @@
 " Vim Configuration
 " TODO: Work on Fold Functionality with <Space>f
-" TODO: Update record macro from q to <Space>r
 
 " Vundle Configuration
 set nocompatible              " be iMproved, required
@@ -86,6 +85,15 @@ nnoremap t z
 nnoremap <Space>c :
 nnoremap <Space>C :!
 
+" Firefox Shortcut
+nnoremap <Space>ef :!firefox
+
+" Python Shortcut
+nnoremap <Space>ep :!python
+
+" Ranger Shortcut
+nnoremap <Space>er :!ranger
+
 " Fugitive Shortcuts
 nnoremap <Space>ga :Git add
 nnoremap <Space>gA :Git add --all<CR>
@@ -107,14 +115,9 @@ nnoremap <Space>n :NERDTreeToggle<CR>
 nnoremap <Space>q :q<CR>
 nnoremap <Space>Q :q!<CR>
 
-" Firefox Shortcut
-nnoremap <Space>ef :!firefox
-
-" Python Shortcut
-nnoremap <Space>ep :!python
-
-" Ranger Shortcut
-nnoremap <Space>er :!ranger
+" Recording Macros
+nnoremap <Space>r q
+nnoremap ' @
 
 " Split Window Commands
 nnoremap <Space>sh :wincmd k<CR>
@@ -173,6 +176,15 @@ xnoremap P Pgvy
 xnoremap <Space>c :
 xnoremap <Space>C :!
 
+" Firefox Shortcut
+xnoremap <Space>ef :!firefox
+
+" Python Shortcut
+xnoremap <Space>ep :!python
+
+" Ranger Shortcut
+xnoremap <Space>er :!ranger
+
 " Fugitive Shortcuts
 xnoremap <Space>ga :Git add
 xnoremap <Space>gA :Git add --all<CR>
@@ -194,14 +206,9 @@ xnoremap <Space>n :NERDTreeToggle<CR>
 xnoremap <Space>q :q<CR>
 xnoremap <Space>Q :q!<CR>
 
-" Firefox Shortcut
-xnoremap <Space>ef :!firefox
-
-" Python Shortcut
-xnoremap <Space>ep :!python
-
-" Ranger Shortcut
-xnoremap <Space>er :!ranger
+" Recording Macros
+xnoremap <Space>r q
+xnoremap ' @
 
 " Split Window Commands
 xnoremap <Space>sh :wincmd k<CR>
