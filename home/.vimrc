@@ -1,5 +1,6 @@
 " Vim Configuration
 " TODO: Work on Fold Functionality with <Space>f
+" TODO: Update record macro from q to <Space>r
 
 " Vundle Configuration
 set nocompatible              " be iMproved, required
@@ -107,13 +108,13 @@ nnoremap <Space>q :q<CR>
 nnoremap <Space>Q :q!<CR>
 
 " Firefox Shortcut
-nnoremap <Space>rf :!firefox
+nnoremap <Space>ef :!firefox
 
 " Python Shortcut
-nnoremap <Space>rp :!python
+nnoremap <Space>ep :!python
 
 " Ranger Shortcut
-nnoremap <Space>rr :!ranger
+nnoremap <Space>er :!ranger
 
 " Split Window Commands
 nnoremap <Space>sh :wincmd k<CR>
@@ -194,13 +195,13 @@ xnoremap <Space>q :q<CR>
 xnoremap <Space>Q :q!<CR>
 
 " Firefox Shortcut
-xnoremap <Space>rf :!firefox
+xnoremap <Space>ef :!firefox
 
 " Python Shortcut
-xnoremap <Space>rp :!python
+xnoremap <Space>ep :!python
 
 " Ranger Shortcut
-xnoremap <Space>rr :!ranger
+xnoremap <Space>er :!ranger
 
 " Split Window Commands
 xnoremap <Space>sh :wincmd k<CR>
