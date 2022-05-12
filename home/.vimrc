@@ -1,4 +1,5 @@
 " Vim Configuration
+" TODO: Work on Fold Functionality with <Space>f
 
 " Vundle Configuration
 set nocompatible              " be iMproved, required
@@ -55,6 +56,7 @@ filetype plugin indent on    " required
 syntax on
 colorscheme wal
 set encoding=UTF-8
+set modifiable
 set number relativenumber
 set tabstop=4
 
@@ -71,9 +73,9 @@ nnoremap L $
 nnoremap H {
 nnoremap K }
 
-nnoremap mt H
-nnoremap mm M
-nnoremap mb L
+nnoremap <Space>mt H
+nnoremap <Space>mm M
+nnoremap <Space>mb L
 
 nnoremap tt zz
 
@@ -97,7 +99,7 @@ nnoremap <Space>gd :Git diff<CR>
 nnoremap <Space>gr :Git restore
 
 " Match Parentheses/Brackets
-nnoremap <Space>m %
+nnoremap <Space>j %
 
 " NERDTree Toggle
 nnoremap <Space>n :NERDTreeToggle<CR>
@@ -130,6 +132,7 @@ nnoremap <Space>Sh :split
 
 " Tab Commands
 nnoremap <Space>tn :tabnew
+nnoremap <Space>td :tabclose<CR>
 nnoremap <Space>t> :tabm +1
 nnoremap <Space>t< :tabm -1
 nnoremap <Space>tl gt
@@ -154,9 +157,9 @@ xnoremap L $
 xnoremap H {
 xnoremap K }
 
-xnoremap mt H
-xnoremap mm M
-xnoremap mb L
+xnoremap <Space>mt H
+xnoremap <Space>mm M
+xnoremap <Space>mb L
 
 xnoremap tt zz
 
@@ -184,7 +187,7 @@ xnoremap <Space>gd :Git diff<CR>
 xnoremap <Space>gr :Git restore
 
 " Match Parentheses/Brackets
-xnoremap <Space>m %
+xnoremap <Space>j %
 
 " NERDTree Toggle
 xnoremap <Space>n :NERDTreeToggle<CR>
@@ -217,6 +220,7 @@ xnoremap <Space>Sh :split
 
 " Tab Commands
 xnoremap <Space>tn :tabnew
+xnoremap <Space>td :tabclose<CR>
 xnoremap <Space>t> :tabm +1
 xnoremap <Space>t< :tabm -1
 xnoremap <Space>tl gt
