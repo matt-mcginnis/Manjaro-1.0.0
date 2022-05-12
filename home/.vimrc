@@ -76,8 +76,7 @@ nnoremap K }
 nnoremap <Space>mt H
 nnoremap <Space>mm M
 nnoremap <Space>mb L
-
-nnoremap tt zz
+nnoremap <Space>mc zz
 
 " Folds
 nnoremap t z
@@ -160,8 +159,7 @@ xnoremap K }
 xnoremap <Space>mt H
 xnoremap <Space>mm M
 xnoremap <Space>mb L
-
-xnoremap tt zz
+xnoremap <Space>mc zz
 
 " Folds
 xnoremap t z
