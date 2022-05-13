@@ -30,6 +30,9 @@ sudo pacman -Syyu
 # Install base-devel (For VS Code Install)
 sudo pacman -S base-devel
 
+# Install Docker
+sudo pacman -S docker
+
 # Install gnome-keyring (For Signing in to VS Code)
 sudo pacman -S gnome-keyring
 
