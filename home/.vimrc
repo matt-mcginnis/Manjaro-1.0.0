@@ -1,5 +1,6 @@
 " Vim Configuration
-" TODO: Work on Fold Functionality with <Space>f
+" TODO: Work on Spell Check Toggle
+" TODO: Work on Search and Replace Shortcuts
 
 " Vundle Configuration
 set nocompatible              " be iMproved, required
@@ -79,7 +80,7 @@ nnoremap <Space>mb L
 nnoremap <Space>mc zz
 
 " Folds
-nnoremap t z
+nnoremap <Space>f z
 
 " Command
 nnoremap <Space>c :
@@ -166,7 +167,7 @@ xnoremap <Space>mb L
 xnoremap <Space>mc zz
 
 " Folds
-xnoremap t z
+xnoremap <Space>f z
 
 " Remapping paste to retain yanked content
 xnoremap p pgvy
