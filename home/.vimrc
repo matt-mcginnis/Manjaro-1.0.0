@@ -60,6 +60,7 @@ set encoding=UTF-8
 set modifiable
 set number relativenumber
 set tabstop=4
+set splitbelow
 
 """"""""""""""""""""""""
 " Normal Mode Remappings
