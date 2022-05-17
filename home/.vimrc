@@ -126,6 +126,9 @@ nnoremap <Space>r q
 nnoremap ' @
 
 " Split Window Commands
+nnoremap <Space>sd :wincmd c<CR>
+nnoremap <Space>so :wincmd o<CR>
+
 nnoremap <Space>sh :wincmd k<CR>
 nnoremap <Space>sk :wincmd j<CR>
 nnoremap <Space>sj :wincmd h<CR>
@@ -135,6 +138,8 @@ nnoremap <Space>sH :wincmd K<CR>
 nnoremap <Space>sK :wincmd J<CR>
 nnoremap <Space>sJ :wincmd H<CR>
 nnoremap <Space>sL :wincmd L<CR>
+
+nnoremap <Space>su :split#<CR>
 
 nnoremap <Space>ss :split
 nnoremap <Space>sv :vsplit
@@ -220,6 +225,9 @@ xnoremap <Space>r q
 xnoremap ' @
 
 " Split Window Commands
+xnoremap <Space>sd :wincmd c<CR>
+xnoremap <Space>so :wincmd o<CR>
+
 xnoremap <Space>sh :wincmd k<CR>
 xnoremap <Space>sk :wincmd j<CR>
 xnoremap <Space>sj :wincmd h<CR>
@@ -229,6 +237,8 @@ xnoremap <Space>sH :wincmd K<CR>
 xnoremap <Space>sK :wincmd J<CR>
 xnoremap <Space>sJ :wincmd H<CR>
 xnoremap <Space>sL :wincmd L<CR>
+
+xnoremap <Space>su :split#<CR>
 
 xnoremap <Space>ss :split
 xnoremap <Space>sv :vsplit
