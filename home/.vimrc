@@ -60,6 +60,7 @@ set encoding=UTF-8
 set modifiable
 set number relativenumber
 set tabstop=4
+set shiftwidth=0
 set splitbelow
 
 """"""""""""""""""""""""
@@ -80,9 +81,6 @@ nnoremap <Space>mm M
 nnoremap <Space>mb L
 nnoremap <Space>mc zz
 
-" Folds
-nnoremap <Space>f z
-
 " Command
 nnoremap <Space>c :
 nnoremap <Space>C :!
@@ -95,6 +93,9 @@ nnoremap <Space>ep :!python
 
 " Ranger Shortcut
 nnoremap <Space>er :!ranger
+
+" Folds
+nnoremap <Space>f z
 
 " Fugitive Shortcuts
 nnoremap <Space>ga :Git add
@@ -110,6 +111,9 @@ nnoremap <Space>gr :Git restore
 
 " Match Parentheses/Brackets
 nnoremap <Space>j %
+
+" TexLive Compilation
+nnoremap <Space>ll :VimtexCompile<CR>
 
 " NERDTree Toggle
 nnoremap <Space>n :NERDTreeToggle<CR>
@@ -132,8 +136,8 @@ nnoremap <Space>sK :wincmd J<CR>
 nnoremap <Space>sJ :wincmd H<CR>
 nnoremap <Space>sL :wincmd L<CR>
 
-nnoremap <Space>Sv :vsplit
-nnoremap <Space>Sh :split
+nnoremap <Space>ss :split
+nnoremap <Space>sv :vsplit
 
 " Tab Commands
 nnoremap <Space>tn :tabnew
@@ -167,9 +171,6 @@ xnoremap <Space>mm M
 xnoremap <Space>mb L
 xnoremap <Space>mc zz
 
-" Folds
-xnoremap <Space>f z
-
 " Remapping paste to retain yanked content
 xnoremap p pgvy
 xnoremap P Pgvy
@@ -187,6 +188,9 @@ xnoremap <Space>ep :!python
 " Ranger Shortcut
 xnoremap <Space>er :!ranger
 
+" Folds
+xnoremap <Space>f z
+
 " Fugitive Shortcuts
 xnoremap <Space>ga :Git add
 xnoremap <Space>gA :Git add --all<CR>
@@ -201,6 +205,9 @@ xnoremap <Space>gr :Git restore
 
 " Match Parentheses/Brackets
 xnoremap <Space>j %
+
+" TexLive Compilation
+xnoremap <Space>ll :VimtexCompile<CR>
 
 " NERDTree Toggle
 xnoremap <Space>n :NERDTreeToggle<CR>
@@ -223,8 +230,8 @@ xnoremap <Space>sK :wincmd J<CR>
 xnoremap <Space>sJ :wincmd H<CR>
 xnoremap <Space>sL :wincmd L<CR>
 
-xnoremap <Space>Sv :vsplit
-xnoremap <Space>Sh :split
+xnoremap <Space>ss :split
+xnoremap <Space>sv :vsplit
 
 " Tab Commands
 xnoremap <Space>tn :tabnew
