@@ -113,3 +113,5 @@ alias gr="git restore"
 alias ef="firefox"
 alias ep="python"
 alias er="ranger"
+
+alias v="vim"
