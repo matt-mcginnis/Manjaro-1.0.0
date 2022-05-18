@@ -1,4 +1,4 @@
-" Vim Configuration
+"Vim Configuration
 " TODO: Work on Spell Check Toggle
 " TODO: Work on Search and Replace Shortcuts
 
@@ -139,6 +139,11 @@ nnoremap <Space>sK :wincmd J<CR>
 nnoremap <Space>sJ :wincmd H<CR>
 nnoremap <Space>sL :wincmd L<CR>
 
+nnoremap <Space>s- :resize -5<CR>
+nnoremap <Space>s= :resize +5<CR>
+nnoremap <Space>s, :vertical resize -5<CR>
+nnoremap <Space>s. :vertical resize +5<CR>
+
 nnoremap <Space>su :split#<CR>
 
 nnoremap <Space>ss :split
@@ -237,6 +242,11 @@ xnoremap <Space>sH :wincmd K<CR>
 xnoremap <Space>sK :wincmd J<CR>
 xnoremap <Space>sJ :wincmd H<CR>
 xnoremap <Space>sL :wincmd L<CR>
+
+xnoremap <Space>s- :resize -5<CR>
+xnoremap <Space>s= :resize +5<CR>
+xnoremap <Space>s, :vertical resize -5<CR>
+xnoremap <Space>s. :vertical resize +5<CR>
 
 xnoremap <Space>su :split#<CR>
 

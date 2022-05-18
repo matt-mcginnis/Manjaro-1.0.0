@@ -99,6 +99,9 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias di="docker images"
+alias dr="docker run"
+
 alias ga="git add"
 alias gA="git add --all"
 alias gca="git commit -a"
