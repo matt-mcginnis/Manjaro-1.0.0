@@ -1,6 +1,5 @@
 "Vim Configuration
-" TODO: Work on Spell Check Toggle
-" TODO: Work on Search and Replace Shortcuts
+" TODO: Swap Nerdtree/Ranger for Netrw
 
 " Vundle Configuration
 set nocompatible              " be iMproved, required
@@ -69,6 +68,7 @@ source ~/.vim/comments.vim
 " Comment/Uncomment
 map <Space>kc :call Comment()<CR>
 map <Space>ku :call Uncomment()<CR>
+map <F1> :setlocal spell! spelllang=en_us<CR>
 
 """"""""""""""""""""""""
 " Normal Mode Remappings
@@ -82,6 +82,11 @@ nnoremap J _
 nnoremap L $
 nnoremap H {
 nnoremap K }
+
+nnoremap gL g$
+nnoremap gJ g0
+nnoremap gk gj
+nnoremap gh gk
 
 nnoremap <Space>mt H
 nnoremap <Space>mm M
@@ -164,6 +169,11 @@ nnoremap <Space>sw <C-w>w
 nnoremap <Space>ss :split
 nnoremap <Space>sv :vsplit
 
+" Spellcheck
+nnoremap <Space>sn ]s
+nnoremap <Space>sp [s
+nnoremap <Space>sc z=
+
 " Tab Commands
 nnoremap <Space>tn :tabnew
 nnoremap <Space>td :tabclose<CR>
@@ -191,6 +201,11 @@ xnoremap L $
 xnoremap H {
 xnoremap K }
 
+xnoremap gL g$
+xnoremap gJ g0
+xnoremap gk gj
+xnoremap gh gk
+
 xnoremap <Space>mt H
 xnoremap <Space>mm M
 xnoremap <Space>mb L
@@ -205,6 +220,10 @@ xnoremap <Space>f z
 
 " Match Parentheses/Brackets
 xnoremap <Space>j %
+
+" Spellcheck
+xnoremap <Space>sn ]s
+xnoremap <Space>sp [s
 
 " Remapping visual block
 xnoremap <Space>v <C-v>
