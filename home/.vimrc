@@ -63,6 +63,13 @@ set tabstop=4
 set shiftwidth=0
 set splitbelow
 
+" Source Vim Scripts
+source ~/.vim/comments.vim
+
+" Comment/Uncomment
+map <Space>kc :call Comment()<CR>
+map <Space>ku :call Uncomment()<CR>
+
 """"""""""""""""""""""""
 " Normal Mode Remappings
 """"""""""""""""""""""""
@@ -115,6 +122,12 @@ nnoremap <Space>j %
 " TexLive Compilation
 nnoremap <Space>ll :VimtexCompile<CR>
 
+" Vimgrep (Locate)
+nnoremap <Space>lv :vim /
+nnoremap <Space>lc :cope<CR>
+nnoremap <Space>ln :cnext<CR>
+nnoremap <Space>lp :cprev<CR>
+
 " NERDTree Toggle
 nnoremap <Space>n :NERDTreeToggle<CR>
 
@@ -145,6 +158,8 @@ nnoremap <Space>s, :vertical resize -5<CR>
 nnoremap <Space>s. :vertical resize +5<CR>
 
 nnoremap <Space>su :split#<CR>
+
+nnoremap <Space>sw <C-w>w
 
 nnoremap <Space>ss :split
 nnoremap <Space>sv :vsplit
@@ -185,87 +200,14 @@ xnoremap <Space>mc zz
 xnoremap p pgvy
 xnoremap P Pgvy
 
-" Command
-xnoremap <Space>c :
-xnoremap <Space>C :!
-
-" Firefox Shortcut
-xnoremap <Space>ef :!firefox
-
-" Python Shortcut
-xnoremap <Space>ep :!python
-
-" Ranger Shortcut
-xnoremap <Space>er :!ranger
-
 " Folds
 xnoremap <Space>f z
-
-" Fugitive Shortcuts
-xnoremap <Space>ga :Git add
-xnoremap <Space>gA :Git add --all<CR>
-xnoremap <Space>gca :Git commit -a<CR>
-xnoremap <Space>gcl :Git clone
-xnoremap <Space>gcm :Git commit -m
-xnoremap <Space>gl :Git pull<CR>
-xnoremap <Space>gp :Git push -u origin main<CR>
-xnoremap <Space>gs :Git status<CR>
-xnoremap <Space>gd :Git diff<CR>
-xnoremap <Space>gr :Git restore
 
 " Match Parentheses/Brackets
 xnoremap <Space>j %
 
-" TexLive Compilation
-xnoremap <Space>ll :VimtexCompile<CR>
-
-" NERDTree Toggle
-xnoremap <Space>n :NERDTreeToggle<CR>
-
-xnoremap <Space>q :q<CR>
-xnoremap <Space>Q :q!<CR>
-
-" Recording Macros
-xnoremap <Space>r q
-xnoremap ' @
-
-" Split Window Commands
-xnoremap <Space>sd :wincmd c<CR>
-xnoremap <Space>so :wincmd o<CR>
-
-xnoremap <Space>sh :wincmd k<CR>
-xnoremap <Space>sk :wincmd j<CR>
-xnoremap <Space>sj :wincmd h<CR>
-xnoremap <Space>sl :wincmd l<CR>
-
-xnoremap <Space>sH :wincmd K<CR>
-xnoremap <Space>sK :wincmd J<CR>
-xnoremap <Space>sJ :wincmd H<CR>
-xnoremap <Space>sL :wincmd L<CR>
-
-xnoremap <Space>s- :resize -5<CR>
-xnoremap <Space>s= :resize +5<CR>
-xnoremap <Space>s, :vertical resize -5<CR>
-xnoremap <Space>s. :vertical resize +5<CR>
-
-xnoremap <Space>su :split#<CR>
-
-xnoremap <Space>ss :split
-xnoremap <Space>sv :vsplit
-
-" Tab Commands
-xnoremap <Space>tn :tabnew
-xnoremap <Space>td :tabclose<CR>
-xnoremap <Space>t> :tabm +1
-xnoremap <Space>t< :tabm -1
-xnoremap <Space>tl gt
-xnoremap <Space>tj gT
-
 " Remapping visual block
 xnoremap <Space>v <C-v>
-
-xnoremap <Space>w :w<CR>
-xnoremap <Space>W :wq<CR>
 
 " Airline Font and Theme
 let g:airline_powerline_fonts=1
