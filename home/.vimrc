@@ -17,6 +17,7 @@ Plugin 'VundleVim/Vundle.vim'
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
+Plugin 'easymotion/vim-easymotion'
 Plugin 'preservim/nerdtree'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
@@ -69,6 +70,8 @@ source ~/.vim/comments.vim
 map <Space>kc :call Comment()<CR>
 map <Space>ku :call Uncomment()<CR>
 map <F1> :setlocal spell! spelllang=en_us<CR>
+
+map <Space><Space> <Plug>(easymotion-prefix)
 
 """"""""""""""""""""""""
 " Normal Mode Remappings
