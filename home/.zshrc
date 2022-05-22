@@ -14,7 +14,7 @@ ZSH_THEME="lambda-gitster"
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
 # If set to an empty array, this variable will have no effect.
-# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "awesomepanda" )
+# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -99,22 +99,4 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias di="docker images"
-alias dr="docker run"
-
-alias ga="git add"
-alias gA="git add --all"
-alias gca="git commit -a"
-alias gcl="git clone"
-alias gcm="git commit -m"
-alias gl="git pull"
-alias gp="git push -u origin main"
-alias gs="git status"
-alias gd="git diff"
-alias gr="git restore"
-
-alias ef="firefox"
-alias ep="python"
-alias er="ranger"
-
-alias v="vim"
+source ~/.oh-my-zsh/aliases/aliases.zsh

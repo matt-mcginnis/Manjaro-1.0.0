@@ -51,9 +51,9 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""
-" Syntax highlighting, line numbers and default tab
-"""""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""
+" Various Custom General Settings
+"""""""""""""""""""""""""""""""""
 syntax on
 colorscheme wal
 set encoding=UTF-8
@@ -62,16 +62,21 @@ set number relativenumber
 set tabstop=4
 set shiftwidth=0
 set splitbelow
+set timeoutlen=1000 ttimeoutlen=0
+
+let mapleader=' '
 
 " Source Vim Scripts
 source ~/.vim/comments.vim
 
 " Comment/Uncomment
-map <Space>kc :call Comment()<CR>
-map <Space>ku :call Uncomment()<CR>
+map <Leader>kc :call Comment()<CR>
+map <Leader>ku :call Uncomment()<CR>
 map <F1> :setlocal spell! spelllang=en_us<CR>
 
-map <Space><Space> <Plug>(easymotion-prefix)
+map <Leader><Leader> <Plug>(easymotion-prefix)
+map <Leader><Leader>k <Plug>(easymotion-j)
+map <Leader><Leader>h <Plug>(easymotion-k)
 
 """"""""""""""""""""""""
 " Normal Mode Remappings
@@ -91,105 +96,105 @@ nnoremap gJ g0
 nnoremap gk gj
 nnoremap gh gk
 
-nnoremap <Space>mt H
-nnoremap <Space>mm M
-nnoremap <Space>mb L
-nnoremap <Space>mc zz
+nnoremap <Leader>mt H
+nnoremap <Leader>mm M
+nnoremap <Leader>mb L
+nnoremap <Leader>mc zz
 
 " Command
-nnoremap <Space>c :
-nnoremap <Space>C :!
+nnoremap <Leader>c :
+nnoremap <Leader>C :!
 
 " Firefox Shortcut
-nnoremap <Space>ef :!firefox
+nnoremap <Leader>ef :!firefox
 
 " Python Shortcut
-nnoremap <Space>ep :!python
+nnoremap <Leader>ep :!python
 
 " Ranger Shortcut
-nnoremap <Space>er :!ranger
+nnoremap <Leader>er :!ranger
 
 " Folds
-nnoremap <Space>f z
+nnoremap <Leader>f z
 
 " Fugitive Shortcuts
-nnoremap <Space>ga :Git add
-nnoremap <Space>gA :Git add --all<CR>
-nnoremap <Space>gca :Git commit -a<CR>
-nnoremap <Space>gcl :Git clone
-nnoremap <Space>gcm :Git commit -m
-nnoremap <Space>gl :Git pull<CR>
-nnoremap <Space>gp :Git push -u origin main<CR>
-nnoremap <Space>gs :Git status<CR>
-nnoremap <Space>gd :Git diff<CR>
-nnoremap <Space>gr :Git restore
+nnoremap <Leader>ga :Git add
+nnoremap <Leader>gA :Git add --all<CR>
+nnoremap <Leader>gca :Git commit -a<CR>
+nnoremap <Leader>gcl :Git clone
+nnoremap <Leader>gcm :Git commit -m
+nnoremap <Leader>gl :Git pull<CR>
+nnoremap <Leader>gp :Git push -u origin main<CR>
+nnoremap <Leader>gs :Git status<CR>
+nnoremap <Leader>gd :Git diff<CR>
+nnoremap <Leader>gr :Git restore
 
 " Match Parentheses/Brackets
-nnoremap <Space>j %
+nnoremap <Leader>j %
 
 " TexLive Compilation
-nnoremap <Space>ll :VimtexCompile<CR>
+nnoremap <Leader>ll :VimtexCompile<CR>
 
 " Vimgrep (Locate)
-nnoremap <Space>lv :vim /
-nnoremap <Space>lc :cope<CR>
-nnoremap <Space>ln :cnext<CR>
-nnoremap <Space>lp :cprev<CR>
+nnoremap <Leader>lv :vim /
+nnoremap <Leader>lc :cope<CR>
+nnoremap <Leader>ln :cnext<CR>
+nnoremap <Leader>lp :cprev<CR>
 
 " NERDTree Toggle
-nnoremap <Space>n :NERDTreeToggle<CR>
+nnoremap <Leader>n :NERDTreeToggle<CR>
 
-nnoremap <Space>q :q<CR>
-nnoremap <Space>Q :q!<CR>
+nnoremap <Leader>q :q<CR>
+nnoremap <Leader>Q :q!<CR>
 
 " Recording Macros
-nnoremap <Space>r q
+nnoremap <Leader>r q
 nnoremap ' @
 
 " Split Window Commands
-nnoremap <Space>sd :wincmd c<CR>
-nnoremap <Space>so :wincmd o<CR>
+nnoremap <Leader>sd :wincmd c<CR>
+nnoremap <Leader>so :wincmd o<CR>
 
-nnoremap <Space>sh :wincmd k<CR>
-nnoremap <Space>sk :wincmd j<CR>
-nnoremap <Space>sj :wincmd h<CR>
-nnoremap <Space>sl :wincmd l<CR>
+nnoremap <Leader>sh :wincmd k<CR>
+nnoremap <Leader>sk :wincmd j<CR>
+nnoremap <Leader>sj :wincmd h<CR>
+nnoremap <Leader>sl :wincmd l<CR>
 
-nnoremap <Space>sH :wincmd K<CR>
-nnoremap <Space>sK :wincmd J<CR>
-nnoremap <Space>sJ :wincmd H<CR>
-nnoremap <Space>sL :wincmd L<CR>
+nnoremap <Leader>sH :wincmd K<CR>
+nnoremap <Leader>sK :wincmd J<CR>
+nnoremap <Leader>sJ :wincmd H<CR>
+nnoremap <Leader>sL :wincmd L<CR>
 
-nnoremap <Space>s- :resize -5<CR>
-nnoremap <Space>s= :resize +5<CR>
-nnoremap <Space>s, :vertical resize -5<CR>
-nnoremap <Space>s. :vertical resize +5<CR>
+nnoremap <Leader>s- :resize -5<CR>
+nnoremap <Leader>s= :resize +5<CR>
+nnoremap <Leader>s, :vertical resize -5<CR>
+nnoremap <Leader>s. :vertical resize +5<CR>
 
-nnoremap <Space>su :split#<CR>
+nnoremap <Leader>su :split#<CR>
 
-nnoremap <Space>sw <C-w>w
+nnoremap <Leader>sw <C-w>w
 
-nnoremap <Space>ss :split
-nnoremap <Space>sv :vsplit
+nnoremap <Leader>sn :split
+nnoremap <Leader>sv :vsplit
 
 " Spellcheck
-nnoremap <Space>sn ]s
-nnoremap <Space>sp [s
-nnoremap <Space>sc z=
+nnoremap <Leader>s. ]s
+nnoremap <Leader>s, [s
+nnoremap <Leader>sc z=
 
 " Tab Commands
-nnoremap <Space>tn :tabnew
-nnoremap <Space>td :tabclose<CR>
-nnoremap <Space>t> :tabm +1
-nnoremap <Space>t< :tabm -1
-nnoremap <Space>tl gt
-nnoremap <Space>tj gT
+nnoremap <Leader>tn :tabnew
+nnoremap <Leader>td :tabclose<CR>
+nnoremap <Leader>t. :tabm +1
+nnoremap <Leader>t, :tabm -1
+nnoremap <Leader>tl gt
+nnoremap <Leader>tj gT
 
 " Remapping visual block
-nnoremap <Space>v <C-v>
+nnoremap <Leader>v <C-v>
 
-nnoremap <Space>w :w<CR>
-nnoremap <Space>W :wq<CR>
+nnoremap <Leader>w :w<CR>
+nnoremap <Leader>W :wq<CR>
 
 """"""""""""""""""""""""
 " Visual Mode Remappings
@@ -209,34 +214,34 @@ xnoremap gJ g0
 xnoremap gk gj
 xnoremap gh gk
 
-xnoremap <Space>mt H
-xnoremap <Space>mm M
-xnoremap <Space>mb L
-xnoremap <Space>mc zz
+xnoremap <Leader>mt H
+xnoremap <Leader>mm M
+xnoremap <Leader>mb L
+xnoremap <Leader>mc zz
 
 " Remapping paste to retain yanked content
 xnoremap p pgvy
 xnoremap P Pgvy
 
 " Folds
-xnoremap <Space>f z
+xnoremap <Leader>f z
 
 " Match Parentheses/Brackets
-xnoremap <Space>j %
+xnoremap <Leader>j %
 
 " Spellcheck
-xnoremap <Space>sn ]s
-xnoremap <Space>sp [s
+xnoremap <Leader>s. ]s
+xnoremap <Leader>s, [s
 
 " Remapping visual block
-xnoremap <Space>v <C-v>
+xnoremap <Leader>v <C-v>
 
 " Airline Font and Theme
 let g:airline_powerline_fonts=1
 let g:airline_theme='tomorrow'
 
 " UltiSnips Configuration
-let g:UltiSnipsExpandTrigger="<C-Space>"
+let g:UltiSnipsExpandTrigger="<C-Leader>"
 let g:UltiSnipsJumpForwardTrigger="<C-e>"
 let g:UltiSnipsJumpBackwardTrigger="<C-n>"
 
