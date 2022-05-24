@@ -5,51 +5,63 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
+" Vim-Plug
+let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
+if empty(glob(data_dir . '/autoload/plug.vim'))
+  silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
 
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
+call plug#begin()
+" The default plugin directory will be as follows:
+"   - Vim (Linux/macOS): '~/.vim/plugged'
+"   - Vim (Windows): '~/vimfiles/plugged'
+"   - Neovim (Linux/macOS/Windows): stdpath('data') . '/plugged'
+" You can specify a custom plugin directory by passing it as the argument
+"   - e.g. `call plug#begin('~/.vim/plugged')`
+"   - Avoid using standard Vim directory names like 'plugin'
 
-" The following are examples of different formats supported.
-" Keep Plugin commands between vundle#begin/end.
-" plugin on GitHub repo
-Plugin 'easymotion/vim-easymotion'
-Plugin 'preservim/nerdtree'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'tpope/vim-fugitive'
-Plugin 'lervag/vimtex'
-Plugin 'dylanaraps/wal.vim'
-Plugin 'ycm-core/YouCompleteMe'
+" Make sure you use single quotes
 
-" Track the engine.
-Plugin 'SirVer/ultisnips'
+Plug 'easymotion/vim-easymotion'
+Plug 'preservim/nerdtree'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'tpope/vim-fugitive'
+Plug 'lervag/vimtex'
+Plug 'dylanaraps/wal.vim'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'ryanoasis/vim-devicons'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'matt-mcginnis/vim-snippets'
 
-" Snippets are separated from the engine. Add this if you want them:
-Plugin 'matt-mcginnis/vim-snippets'
+" Initialize plugin system
+call plug#end()
 
-" Needs to be last for icons to show up
-Plugin 'Xuyuanp/nerdtree-git-plugin'
-Plugin 'ryanoasis/vim-devicons'
+" Use tab for trigger completion with characters ahead and navigate.
+" NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
+" other plugin before putting this into your config.
+inoremap <silent><expr> <TAB>
+      \ pumvisible() ? "\<C-n>" :
+      \ CheckBackspace() ? "\<TAB>" :
+      \ coc#refresh()
+inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
 
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
-" To ignore plugin indent changes, instead use:
-"filetype plugin on
-"
-" Brief help
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
-"
-" see :h vundle for more details or wiki for FAQ
-" Put your non-Plugin stuff after this line
+function! CheckBackspace() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~# '\s'
+endfunction
+
+" Make <CR> auto-select the first completion item and notify coc.nvim to
+" format on enter, <cr> could be remapped by other vim plugin
+inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
+                              \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+
+" Use <C-j> for jump to next placeholder, it's default of coc.nvim
+let g:coc_snippet_next = '<CR>f'
+
+" Use <C-k> for jump to previous placeholder, it's default of coc.nvim
+let g:coc_snippet_prev = '<CR>b'
 
 """""""""""""""""""""""""""""""""
 " Various Custom General Settings
@@ -64,6 +76,7 @@ set shiftwidth=0
 set splitbelow
 set timeoutlen=1000 ttimeoutlen=0
 
+" Set Leader to Space
 let mapleader=' '
 
 " Source Vim Scripts
@@ -74,6 +87,7 @@ map <Leader>kc :call Comment()<CR>
 map <Leader>ku :call Uncomment()<CR>
 map <F1> :setlocal spell! spelllang=en_us<CR>
 
+" Easy Motion Remappings
 map <Leader><Leader> <Plug>(easymotion-prefix)
 map <Leader><Leader>k <Plug>(easymotion-j)
 map <Leader><Leader>h <Plug>(easymotion-k)
@@ -185,8 +199,8 @@ nnoremap <Leader>sc z=
 " Tab Commands
 nnoremap <Leader>tn :tabnew
 nnoremap <Leader>td :tabclose<CR>
-nnoremap <Leader>t. :tabm +1
-nnoremap <Leader>t, :tabm -1
+nnoremap <Leader>t. :tabm +1<CR>
+nnoremap <Leader>t, :tabm -1<CR>
 nnoremap <Leader>tl gt
 nnoremap <Leader>tj gT
 
@@ -239,14 +253,6 @@ xnoremap <Leader>v <C-v>
 " Airline Font and Theme
 let g:airline_powerline_fonts=1
 let g:airline_theme='tomorrow'
-
-" UltiSnips Configuration
-let g:UltiSnipsExpandTrigger="<C-Leader>"
-let g:UltiSnipsJumpForwardTrigger="<C-e>"
-let g:UltiSnipsJumpBackwardTrigger="<C-n>"
-
-" YouCompleteMe Configuration
-let g:ycm_autoclose_preview_window_after_completion = 1
 
 " Nerdtree Icons and Git statuses
 let g:NERDTreeGitStatusIndicatorMapCustom = {
