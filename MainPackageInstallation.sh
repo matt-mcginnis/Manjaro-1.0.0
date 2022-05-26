@@ -27,12 +27,6 @@ sudo pacman -Syyu
 ##### Adding Git SSH Key and Settings #####
 #######################################
 
-ssh-keygen -t ed25519 -C "mcginnisma90@gmail.com"
-eval "$(ssh-agent -s)"
-ssh-add ~/.ssh/id_ed25519
-
-# Will need to cat ~/.ssh/id_ed25519.pub and add it to Github
-
 git config --global user.email "mcginnisma90@gmail.com"
 git config --global user.name "Matt McGinnis"
 git config --global core.editor "nvim"

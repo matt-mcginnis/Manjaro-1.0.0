@@ -40,26 +40,12 @@
    b) Set Alt - q to open Qutebrowser
 17) Set Konsole profile.
 18) Set Power Saving Settings.
-19) Checkout and install Visual Studio Code in the ~ directory.
-   a) > git clone https://aur.archlinux.org/visual-studio-code-bin.git
-   b) > cd visual-studio-code-bin
-   c) > makepkg -si
-   d) Sign into Visual Studio Code using Microsoft account (may need to add keyring password).
-20) Set keyring to automatically unlock.
-   a) Open /etc/pam.d/sddm as sudo to edit
-   b) Add the following lines in the appropriate locations:
-      auth     optional    pam_gnome_keyring.so
-      auth     optional    pam_gnome_keyring.so auto_start
-   c) You will have to restart and after restarting you will be prompted to enter your keyring
-      when you open VS Code for the first time again. Make sure the option to automatically log
-      into the keyring is selected when you enter the password and you shouldn't have to log in
-      after restarting again.
 21) After installation of kio-gdrive go into Dolphin, select the Network tab, select Google Drive
     and follow the steps to sign into Google.
 22) For ranger set up and installation do the following.
    a) > ranger --copy-config=all
    b) Copy ~/Github/Manjaro0.0.0/ranger/rc.conf to ~/.config/ranger/
-23) Update Konsole settings for splitting windows and tab movement to be like VS Code.
+23) Update Konsole settings for splitting windows and tab movement.
 24) Install Vundle: https://github.com/VundleVim/Vundle.vim
 25) Install yay: https://aur.archlinux.org/yay-git.git
 26) Install YouCompleteMe and UltiSnippets Plugin
