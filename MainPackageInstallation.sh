@@ -35,6 +35,9 @@ git config --global core.editor "nvim"
 ##### Package Installation #####
 ################################
 
+# Install base-devel
+sudo pacman -S base-devel
+
 # Install Docker
 sudo pacman -S docker
 
@@ -44,14 +47,14 @@ sudo pacman -S neovim
 # Install kio-gdrive (Google Drive)
 sudo pacman -S kio-gdrive
 
-# Install pywal
-sudo pip3 install pywal
-
 # Install nodejs and npm
 sudo pacman -S nodejs npm
 
 # Install pyenv
 sudo pacman -S pyenv
+
+# Install pywal
+sudo pip3 install pywal
 
 # Install qutebrowser
 sudo pacman -S qutebrowser
@@ -62,19 +65,19 @@ sudo pacman -S texlive-most
 # Install unzip
 sudo pacman -S unzip
 
-#############################
-##### Install Oh-My-Zsh #####
-#############################
-
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
 #######################
 ##### Install yay #####
 #######################
 
 sudo git clone https://aur.archlinux.org/yay-git.git
-sudo chown -R matt:legion ./yay-git
+sudo chown -R matt:matt ./yay-git
 cd yay-git
-sudo makepkg -si
+makepkg -si
 cd ..
 sudo rm -rf yay-git
+
+#############################
+##### Install Oh-My-Zsh #####
+#############################
+
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
