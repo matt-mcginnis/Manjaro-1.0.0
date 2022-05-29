@@ -1,64 +1,37 @@
 1) Connect to Wifi.
-2) Switch to Dark Theme and update wallpaper.
+2) Switch to Dark Theme.
 3) Update touchpad settings.
-4) Add ssh key
+4) Update keyboard settings.
+5) Add ssh key
    a) > ssh-keygen -t ed25519 -C "mcginnisma90@gmail.com"
    b) > eval "$(ssh-agent -s)"
    c) > ssh-add ~/.ssh/id_ed25519
    d) > cat ~/.ssh/id_ed25519.pub
-5) Add Github settings
-   a) > git config --global user.email "mcginnisma90@gmail.com"
-   b) > git config --global user.name "Matt McGinnis"
-   c) > git config --global core.editor "vim"
-   d) Add the ssh for this device generated in step (4) (d) to Github
+   e) Add the ssh for this device generated in step (4) (d) to Github
 6) Checkout Manjaro-1.0.0 repository
    a) git clone git@github.com:matt-mcginnis/Manjaro-1.0.0.git
 7) Run installation scripts from Manjaro-1.0.0 repository
-   a) > sudo sh ./100-Manjaro-Package-Installation.sh
-   b) > sudo sh ./200-Open-Source-Package-Installation.sh
-   c) > sudo sh ./300-Configuration-File-Setup.sh
-8) Move .oh-my-zsh from /root to ~ and copy .zshrc from Manjaro repository to ~
-   a) > sudo mv /root/.oh-my-zsh ~
-   b) > sudo cp ~/Github/Manjaro-1.0.0/home/.zshrc ~
-9) You can probably remove some of the .zshrc files in /root
-   a) sudo rm /root/.shell.pre-oh-my-zshrc
-   b) sudo rm /root/.zsh_history
-   c) sudo rm /root/.zshrc.pre-oh-my-zsh
-10) Copy .vimrc from Manjaro repository to ~
-   a) > sudo cp ~/Github/Manjaro-1.0.0/home/.vimrc ~
-11) Install zsh-vi-mode (This may require a little bit of git configuration and troubleshooting)
-   a) > sudo git clone https://github.com/jeffreytse/zsh-vi-mode.git ~/.oh-my-zsh/zsh-vi-mode
-   b) > source ~/.oh-my-zsh/zsh-vi-mode/zsh-vi-mode.plugin.zsh
-12) Install lambda-gitster theme: https://github.com/ergenekonyigit/lambda-gitster
-13) Copy zsh-vi-mode settings from Manjaro repository to ~/.oh-my-zsh/plugins/zsh-vi-mode
+   a) > sudo sh ./MainPackageInstallation.sh
+   b) > sudo sh ./MainConfigurationSetup.sh
+8) Copy zsh-vi-mode settings from Manjaro repository to ~/.oh-my-zsh/plugins/zsh-vi-mode
    a) > sudo cp ~/Github/Manjaro0.0.0/zsh-plugins/zsh-vi-mode.plugin.zsh ~/.oh-my-zsh/plugins/zsh-vi-mode/
-14) Copy qutebrowser settings from Manjaro repository to ~/.config/qutebrowser/autoconfig.yml
+9) Copy qutebrowser settings from Manjaro repository to ~/.config/qutebrowser/autoconfig.yml
    a) > cp ~/Github/Manjaro0.0.0/qutebrowser-config/autoconfig.yml ~/.config/qutebrowser/autoconfig.yml
-15) Swap Caps Lock and Escape and Set Right Alt to never choose 3rd level under Advanced Keyboard Settings.
-16) Import keyboard shortcuts from Manjaro repository shortcuts-scheme.kksrc file.
-   a) Set Alt - Enter to open Konsole
-   b) Set Alt - q to open Qutebrowser
-17) Set Konsole profile.
-18) Set Power Saving Settings.
-21) After installation of kio-gdrive go into Dolphin, select the Network tab, select Google Drive
+10) Swap Caps Lock and Escape and Set Right Alt to never choose 3rd level under Advanced Keyboard Settings.
+11) Import keyboard shortcuts from Manjaro repository shortcuts-scheme.kksrc file.
+   a) Set Meta - Enter to open Konsole
+   b) Set Meta - q to open Qutebrowser
+12) Set Konsole profile.
+13) Set Power Saving Settings.
+14) After installation of kio-gdrive go into Dolphin, select the Network tab, select Google Drive
     and follow the steps to sign into Google.
-22) For ranger set up and installation do the following.
-   a) > ranger --copy-config=all
-   b) Copy ~/Github/Manjaro0.0.0/ranger/rc.conf to ~/.config/ranger/
-23) Update Konsole settings for splitting windows and tab movement.
-24) Install Vundle: https://github.com/VundleVim/Vundle.vim
-25) Install yay: https://aur.archlinux.org/yay-git.git
-26) Install YouCompleteMe and UltiSnippets Plugin
-   a) Add the two snippets to .vimrc
-   b) For YouCompleteMe we need to run the following:
-      > pip install --user cmake
-      > cd ~/.vim/bundle/YouCompleteMe
-      > ./install.py
-27) Install Nerd Fonts to use with NERDTree
+15) Update Konsole settings for splitting windows and tab movement.
+16) Install Nerd Fonts to use with NERDTree
     a) > yay -S nerd-fonts-complete
-28) Add uBlock Origin and Vimium extensions to Firefox.
+17) Add uBlock Origin and Vimium extensions to Firefox.
     a) Copy Vimium configuration file.
-29) Install pywal: https://github.com/dylanaraps/pywal
-30) After installing Docker run the following:
+18) After installing Docker run the following:
     > sudo systemctl start docker.service
     > sudo systemctl enable docker.service
+19) Add Global themes: Ant-Dark, Artim-Dark, Breath, Breath Dark, Breath Light, Breeze, Breeze Dark, 
+    Breeze Twilight, Dracula, KDE-Story, Monochrome, Nordic, Nordic-darker, Oxygen, Psion, Sweet
