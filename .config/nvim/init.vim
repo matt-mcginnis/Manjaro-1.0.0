@@ -83,7 +83,7 @@ let mapleader=' '
 " Netrw Settings
 "let g:netrw_banner = 0
 let g:netrw_liststyle = 3
-let g:netrw_brows_split = 4
+let g:netrw_browse_split = 1
 let g:netrw_winsize = 20
 
 " Source Vim Scripts
@@ -163,7 +163,7 @@ nnoremap <Leader>ln :cnext<CR>
 nnoremap <Leader>lp :cprev<CR>
 
 " NERDTree Toggle
-nnoremap <Leader>n :e .<CR>
+nnoremap <Leader>n :30vsplit .<CR>
 
 nnoremap <Leader>q :q<CR>
 nnoremap <Leader>Q :q!<CR>
