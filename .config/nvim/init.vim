@@ -80,6 +80,12 @@ set timeoutlen=1000 ttimeoutlen=0
 " Set Leader to Space
 let mapleader=' '
 
+" Netrw Settings
+"let g:netrw_banner = 0
+let g:netrw_liststyle = 3
+let g:netrw_brows_split = 4
+let g:netrw_winsize = 20
+
 " Source Vim Scripts
 source ~/.config/nvim/scripts/comments.vim
 
@@ -157,7 +163,7 @@ nnoremap <Leader>ln :cnext<CR>
 nnoremap <Leader>lp :cprev<CR>
 
 " NERDTree Toggle
-nnoremap <Leader>n :NERDTreeToggle<CR>
+nnoremap <Leader>n :e .<CR>
 
 nnoremap <Leader>q :q<CR>
 nnoremap <Leader>Q :q!<CR>
