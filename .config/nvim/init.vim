@@ -58,10 +58,10 @@ endfunction
 inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
                               \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
-" Use <C-j> for jump to next placeholder, it's default of coc.nvim
+" Use <CR>f for jump forward a placeholder, it's default of coc.nvim
 let g:coc_snippet_next = '<CR>f'
 
-" Use <C-k> for jump to previous placeholder, it's default of coc.nvim
+" Use <CR>b for jump backwards a placeholder, it's default of coc.nvim
 let g:coc_snippet_prev = '<CR>b'
 
 """""""""""""""""""""""""""""""""
