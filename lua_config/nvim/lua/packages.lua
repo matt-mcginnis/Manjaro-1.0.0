@@ -37,10 +37,10 @@ require('packer').startup(function()
     }
 
     -- IDE
-    use 'nvim-treesitter/nvim-treesitter'
+    use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
 
     -- Other Plugins
-    use 'tomasr/molokai'
+    use 'NLKNguyen/papercolor-theme'
     use 'easymotion/vim-easymotion'
     use 'vim-airline/vim-airline'
     use 'vim-airline/vim-airline-themes'

@@ -17,7 +17,3 @@ configs.setup {
 
 vim.opt.foldmethod = "expr"
 vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
-
-local function blah()
-    print "hello world\n"
-end
