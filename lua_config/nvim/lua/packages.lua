@@ -38,6 +38,8 @@ require('packer').startup(function()
 
     -- IDE
     use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
+    use 'neovim/nvim-lspconfig'
+    use 'williamboman/nvim-lsp-installer'
 
     -- Other Plugins
     use 'NLKNguyen/papercolor-theme'
