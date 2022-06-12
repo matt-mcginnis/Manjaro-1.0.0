@@ -13,7 +13,7 @@ if empty(glob(data_dir . '/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
-call plug#begin('~/.config/nvim/plugged')
+call plug#begin('~/.vim/plugged')
 " The default plugin directory will be as follows:
 "   - Vim (Linux/macOS): '~/.vim/plugged'
 "   - Vim (Windows): '~/vimfiles/plugged'
@@ -35,6 +35,7 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'ryanoasis/vim-devicons'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'matt-mcginnis/vim-snippets'
+Plug 'mhinz/vim-startify'
 
 " Initialize plugin system
 call plug#end()
@@ -76,6 +77,7 @@ set tabstop=4
 set shiftwidth=0
 set splitbelow
 set timeoutlen=1000 ttimeoutlen=0
+set mouse=a
 
 " Set Leader to Space
 let mapleader=' '
@@ -85,9 +87,10 @@ let mapleader=' '
 let g:netrw_liststyle = 3
 let g:netrw_browse_split = 1
 let g:netrw_winsize = 20
+let g:netwr_chgwin = 1
 
 " Source Vim Scripts
-source ~/.config/nvim/scripts/comments.vim
+source ~/.vim/scripts/comments.vim
 
 " Comment/Uncomment
 map <Leader>kc :call Comment()<CR>
@@ -163,7 +166,7 @@ nnoremap <Leader>ln :cnext<CR>
 nnoremap <Leader>lp :cprev<CR>
 
 " NERDTree Toggle
-nnoremap <Leader>n :30vsplit .<CR>
+nnoremap <Leader>n :NERDTree <CR>
 
 nnoremap <Leader>q :q<CR>
 nnoremap <Leader>Q :q!<CR>
