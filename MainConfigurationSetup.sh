@@ -34,3 +34,11 @@ cp zsh-plugins/zsh-vi-mode.plugin.zsh ~/.oh-my-zsh/custom/plugins/zsh-vi-mode/zs
 ##########################################
 
 cp -r .config/nvim ~/.config
+
+###########################
+##### Copy Wallpapers #####
+###########################
+cp -r Wallpapers ~/Pictures
+
+# Set time to local-time (Dual Boot with Windows)
+sudo timedatectl set-local-rtc 1 --adjust-system-clock

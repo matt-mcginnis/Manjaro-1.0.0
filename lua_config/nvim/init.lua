@@ -1,5 +1,0 @@
-require('keybindings')
-require('packages')
-require('treesitter')
-require('lsp')
-require('config')
