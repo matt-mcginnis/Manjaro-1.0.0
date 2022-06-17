@@ -27,6 +27,8 @@ git clone git@github.com:zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/cust
 cp -r .oh-my-zsh/custom/aliases ~/.oh-my-zsh/custom/
 cp home/.zshrc ~/.zshrc
 
+cp zsh-plugins/zsh-vi-mode.plugin.zsh ~/.oh-my-zsh/custom/plugins/zsh-vi-mode/zsh-vi-mode.plugin.zsh
+
 ##########################################
 ##### Copy over neovim configuration #####
 ##########################################
