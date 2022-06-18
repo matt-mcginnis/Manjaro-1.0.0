@@ -33,5 +33,5 @@
 18) After installing Docker run the following:
     > sudo systemctl start docker.service
     > sudo systemctl enable docker.service
-19) Add Global themes: Ant-Dark, Artim-Dark, Breath, Breath Dark, Breath Light, Breeze, Breeze Dark, 
+19) Add Global themes: Ant-Dark, Aritim-Dark, Breath, Breath Dark, Breath Light, Breeze, Breeze Dark, 
     Breeze Twilight, Dracula, KDE-Story, Monochrome, Nordic, Nordic-darker, Oxygen, Psion, Sweet
