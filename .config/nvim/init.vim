@@ -1,10 +1,6 @@
 " Neovim Configuration
-
-" TODO: Swap Nerdtree/Ranger for Netrw
-
-" Vundle Configuration
-set nocompatible              " be iMproved, required
-filetype off                  " required
+"
+" TODO: Configure Startify
 
 " Vim-Plug
 let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
@@ -13,10 +9,8 @@ if empty(glob(data_dir . '/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
-call plug#begin('~/.vim/plugged')
+call plug#begin('~/.config/nvim/plugged')
 " The default plugin directory will be as follows:
-"   - Vim (Linux/macOS): '~/.vim/plugged'
-"   - Vim (Windows): '~/vimfiles/plugged'
 "   - Neovim (Linux/macOS/Windows): stdpath('data') . '/plugged'
 " You can specify a custom plugin directory by passing it as the argument
 "   - e.g. `call plug#begin('~/.vim/plugged')`
@@ -78,19 +72,13 @@ set shiftwidth=0
 set splitbelow
 set timeoutlen=1000 ttimeoutlen=0
 set mouse=a
+set clipboard+=unnamedplus
 
 " Set Leader to Space
 let mapleader=' '
 
-" Netrw Settings
-"let g:netrw_banner = 0
-let g:netrw_liststyle = 3
-let g:netrw_browse_split = 1
-let g:netrw_winsize = 20
-let g:netwr_chgwin = 1
-
 " Source Vim Scripts
-source ~/.vim/scripts/comments.vim
+source ~/.config/nvim/scripts/comments.vim
 
 " Comment/Uncomment
 map <Leader>kc :call Comment()<CR>
@@ -168,38 +156,38 @@ nnoremap <Leader>lp :cprev<CR>
 " NERDTree Toggle
 nnoremap <Leader>n :NERDTree <CR>
 
-nnoremap <Leader>q :q<CR>
-nnoremap <Leader>Q :q!<CR>
+nnoremap <Leader>qq :q<CR>
+nnoremap <Leader>qQ :q!<CR>
 
 " Recording Macros
 nnoremap <Leader>r q
 nnoremap ' @
 
 " Split Window Commands
-nnoremap <Leader>sd :wincmd c<CR>
-nnoremap <Leader>so :wincmd o<CR>
+nnoremap <Leader>wd :wincmd c<CR>
+nnoremap <Leader>wo :wincmd o<CR>
 
-nnoremap <Leader>sh :wincmd k<CR>
-nnoremap <Leader>sk :wincmd j<CR>
-nnoremap <Leader>sj :wincmd h<CR>
-nnoremap <Leader>sl :wincmd l<CR>
+nnoremap <Leader>wh :wincmd k<CR>
+nnoremap <Leader>wk :wincmd j<CR>
+nnoremap <Leader>wj :wincmd h<CR>
+nnoremap <Leader>wl :wincmd l<CR>
 
-nnoremap <Leader>sH :wincmd K<CR>
-nnoremap <Leader>sK :wincmd J<CR>
-nnoremap <Leader>sJ :wincmd H<CR>
-nnoremap <Leader>sL :wincmd L<CR>
+nnoremap <Leader>wH :wincmd K<CR>
+nnoremap <Leader>wK :wincmd J<CR>
+nnoremap <Leader>wJ :wincmd H<CR>
+nnoremap <Leader>wL :wincmd L<CR>
 
-nnoremap <Leader>s- :resize -5<CR>
-nnoremap <Leader>s= :resize +5<CR>
-nnoremap <Leader>s, :vertical resize -5<CR>
-nnoremap <Leader>s. :vertical resize +5<CR>
+nnoremap <Leader>w- :resize -5<CR>
+nnoremap <Leader>w= :resize +5<CR>
+nnoremap <Leader>w, :vertical resize -5<CR>
+nnoremap <Leader>w. :vertical resize +5<CR>
 
-nnoremap <Leader>su :split#<CR>
+nnoremap <Leader>wu :split#<CR>
 
-nnoremap <Leader>sw <C-w>w
+nnoremap <Leader>ww <C-w>w
 
-nnoremap <Leader>sn :split
-nnoremap <Leader>sv :vsplit
+nnoremap <Leader>wh :split
+nnoremap <Leader>wv :vsplit
 
 " Spellcheck
 nnoremap <Leader>s. ]s
@@ -217,8 +205,8 @@ nnoremap <Leader>tj gT
 " Remapping visual block
 nnoremap <Leader>v <C-v>
 
-nnoremap <Leader>w :w<CR>
-nnoremap <Leader>W :wq<CR>
+nnoremap <Leader>ww :w<CR>
+nnoremap <Leader>wW :wq<CR>
 
 """"""""""""""""""""""""
 " Visual Mode Remappings

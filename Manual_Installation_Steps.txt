@@ -35,3 +35,8 @@
     > sudo systemctl enable docker.service
 19) Add Global themes: Ant-Dark, Aritim-Dark, Breath, Breath Dark, Breath Light, Breeze, Breeze Dark, 
     Breeze Twilight, Dracula, KDE-Story, Monochrome, Nordic, Nordic-darker, Oxygen, Psion, Sweet
+
+Nvim Setup
+1) Run pip install pynvim --upgrade
+2) Run :CocInstall coc-snippets
+3) Run :CosInstall coc-pyright
