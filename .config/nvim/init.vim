@@ -2,77 +2,11 @@
 "
 " TODO: Configure Startify
 
-" Vim-Plug
-let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
-if empty(glob(data_dir . '/autoload/plug.vim'))
-  silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
-  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
-endif
+source ~/.config/nvim/vimplug/vimplug.vim
 
-call plug#begin('~/.config/nvim/plugged')
-" The default plugin directory will be as follows:
-"   - Neovim (Linux/macOS/Windows): stdpath('data') . '/plugged'
-" You can specify a custom plugin directory by passing it as the argument
-"   - e.g. `call plug#begin('~/.vim/plugged')`
-"   - Avoid using standard Vim directory names like 'plugin'
+source ~/.config/nvim/completion/completion.vim
 
-" Make sure you use single quotes
-
-Plug 'easymotion/vim-easymotion'
-Plug 'preservim/nerdtree'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-Plug 'tpope/vim-fugitive'
-Plug 'lervag/vimtex'
-Plug 'dylanaraps/wal.vim'
-Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'ryanoasis/vim-devicons'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'matt-mcginnis/vim-snippets'
-Plug 'mhinz/vim-startify'
-
-" Initialize plugin system
-call plug#end()
-
-" Use tab for trigger completion with characters ahead and navigate.
-" NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
-" other plugin before putting this into your config.
-inoremap <silent><expr> <TAB>
-      \ pumvisible() ? "\<C-n>" :
-      \ CheckBackspace() ? "\<TAB>" :
-      \ coc#refresh()
-inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
-
-function! CheckBackspace() abort
-  let col = col('.') - 1
-  return !col || getline('.')[col - 1]  =~# '\s'
-endfunction
-
-" Make <CR> auto-select the first completion item and notify coc.nvim to
-" format on enter, <cr> could be remapped by other vim plugin
-inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
-                              \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
-
-" Use <CR>f for jump forward a placeholder, it's default of coc.nvim
-let g:coc_snippet_next = '<CR>f'
-
-" Use <CR>b for jump backwards a placeholder, it's default of coc.nvim
-let g:coc_snippet_prev = '<CR>b'
-
-"""""""""""""""""""""""""""""""""
-" Various Custom General Settings
-"""""""""""""""""""""""""""""""""
-syntax on
-colorscheme wal
-set encoding=UTF-8
-set modifiable
-set number relativenumber
-set tabstop=4
-set shiftwidth=0
-set splitbelow
-set timeoutlen=1000 ttimeoutlen=0
-set mouse=a
-set clipboard+=unnamedplus
+source ~/.config/nvim/general/general.vim
 
 " Set Leader to Space
 let mapleader=' '
