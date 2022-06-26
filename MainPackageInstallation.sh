@@ -65,6 +65,9 @@ sudo pacman -S texlive-most
 # Install unzip
 sudo pacman -S unzip
 
+# Install xsel
+sudo pacman -S xsel
+
 #######################
 ##### Install yay #####
 #######################
