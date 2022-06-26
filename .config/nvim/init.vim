@@ -2,7 +2,7 @@
 "
 " TODO: Configure Startify
 
-source ~/.config/nvim/vimplug/vimplug.vim
+source ~/.config/nvim/plugs/vimplug.vim
 
 source ~/.config/nvim/completion/completion.vim
 
