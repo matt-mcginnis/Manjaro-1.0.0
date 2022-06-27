@@ -18,6 +18,13 @@ map <Leader><Leader>h <Plug>(easymotion-k)
 """"""""""""""""""""""""
 " Normal Mode Remappings
 """"""""""""""""""""""""
+" Moving Between Buffers
+nnoremap <TAB> :bnext<CR>
+nnoremap <S-TAB> :bprevious<CR>
+
+" Easy Uppercase
+inoremap <c-u> <ESC>viwUi
+nnoremap <c-u> viwUi<ESC>
 
 " Remapping Movement Keys
 nnoremap h k
@@ -72,12 +79,6 @@ nnoremap <Leader>j %
 " TexLive Compilation
 nnoremap <Leader>ll :VimtexCompile<CR>
 
-" Vimgrep (Locate)
-nnoremap <Leader>lv :vim /
-nnoremap <Leader>lc :cope<CR>
-nnoremap <Leader>ln :cnext<CR>
-nnoremap <Leader>lp :cprev<CR>
-
 " NERDTree Toggle
 nnoremap <Leader>n :NERDTree <CR>
 
@@ -102,17 +103,15 @@ nnoremap <Leader>wK :wincmd J<CR>
 nnoremap <Leader>wJ :wincmd H<CR>
 nnoremap <Leader>wL :wincmd L<CR>
 
-nnoremap <Leader>w- :resize -5<CR>
-nnoremap <Leader>w= :resize +5<CR>
-nnoremap <Leader>w, :vertical resize -5<CR>
-nnoremap <Leader>w. :vertical resize +5<CR>
+nnoremap <Leader>w- :resize -2<CR>
+nnoremap <Leader>w= :resize +2<CR>
+nnoremap <Leader>w, :vertical resize -2<CR>
+nnoremap <Leader>w. :vertical resize +2<CR>
 
 nnoremap <Leader>wu :split#<CR>
 
-nnoremap <Leader>ww <C-w>w
-
-nnoremap <Leader>wh :split
-nnoremap <Leader>wv :vsplit
+nnoremap <Leader>sh :split
+nnoremap <Leader>sv :vsplit
 
 " Spellcheck
 nnoremap <Leader>s. ]s
@@ -136,6 +135,10 @@ nnoremap <Leader>wW :wq<CR>
 """"""""""""""""""""""""
 " Visual Mode Remappings
 """"""""""""""""""""""""
+
+" Better Tabbing
+vnoremap < <gv
+vnoremap > >gv
 
 " Remapping Movement Keys
 xnoremap h k
