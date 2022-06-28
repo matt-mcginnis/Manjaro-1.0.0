@@ -49,6 +49,9 @@ nnoremap <Leader>mc zz
 nnoremap <Leader>c :
 nnoremap <Leader>C :!
 
+" Ranger
+nmap <Leader>d :RnvimrToggle<CR>
+
 " Firefox Shortcut
 nnoremap <Leader>ef :!firefox
 
@@ -79,14 +82,13 @@ nnoremap <Leader>j %
 " TexLive Compilation
 nnoremap <Leader>ll :VimtexCompile<CR>
 
-" NERDTree Toggle
-nnoremap <Leader>n :NERDTree <CR>
-
+" Quit
 nnoremap <Leader>qq :q<CR>
 nnoremap <Leader>qQ :q!<CR>
 
 " Recording Macros
 nnoremap <Leader>r q
+nnoremap q <Nop>
 nnoremap ' @
 
 " Split Window Commands

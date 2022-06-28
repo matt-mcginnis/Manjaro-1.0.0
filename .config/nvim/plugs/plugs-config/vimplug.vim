@@ -14,18 +14,16 @@
  
  " Make sure you use single quotes
  
- Plug 'easymotion/vim-easymotion'
- Plug 'preservim/nerdtree'
  Plug 'vim-airline/vim-airline'
  Plug 'vim-airline/vim-airline-themes'
  Plug 'tpope/vim-fugitive'
  Plug 'lervag/vimtex'
  Plug 'dylanaraps/wal.vim'
- Plug 'Xuyuanp/nerdtree-git-plugin'
  Plug 'ryanoasis/vim-devicons'
  Plug 'neoclide/coc.nvim', {'branch': 'release'}
  Plug 'matt-mcginnis/vim-snippets'
  Plug 'mhinz/vim-startify'
+ Plug 'kevinhwang91/rnvimr'
   
  " Initialize plugin system
  call plug#end()
