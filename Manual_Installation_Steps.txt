@@ -35,6 +35,8 @@
     > sudo systemctl enable docker.service
 19) Add Global themes: Ant-Dark, Aritim-Dark, Breath, Breath Dark, Breath Light, Breeze, Breeze Dark, 
     Breeze Twilight, Dracula, KDE-Story, Monochrome, Nordic, Nordic-darker, Oxygen, Psion, Sweet
+20) Install Touchegg for gestures:
+    https://github.com/JoseExposito/touchegg#arch-linux-manjaro-and-derivatives
 
 Nvim Setup
 1) Run pip install pynvim --upgrade
