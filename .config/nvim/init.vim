@@ -19,3 +19,5 @@ source ~/.config/nvim/keymaps/keymaps.vim
 
 " Source Plugin Configuration
 source ~/.config/nvim/plugs/plugs-config/start-screen.vim
+source ~/.config/nvim/plugs/plugs-config/rnvimr.vim
+source ~/.config/nvim/plugs/plugs-config/vim-sneak.vim
