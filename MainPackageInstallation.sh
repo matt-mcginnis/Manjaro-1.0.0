@@ -41,6 +41,9 @@ sudo pacman -S base-devel
 # Install Docker
 sudo pacman -S docker
 
+# Install fuzzy finder
+sudo pacman -S fzf
+
 # Install gvim
 sudo pacman -S neovim
 
@@ -58,6 +61,9 @@ sudo pip3 install pywal
 
 # Install qutebrowser
 sudo pacman -S qutebrowser
+
+# Install ripgrep
+sudo pacman -S ripgrep
 
 # Install texlive-most
 sudo pacman -S texlive-most
