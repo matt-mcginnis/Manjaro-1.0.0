@@ -3,7 +3,7 @@
 """"""""""""""""""""""""""""
 
 " Source Plugin Manager
-source ~/.config/nvim/plugs/plugs-config/vimplug.vim
+source ~/.config/nvim/plugs/vimplug.vim
 
 " Source Completion and Snippets
 source ~/.config/nvim/completion/completion.vim

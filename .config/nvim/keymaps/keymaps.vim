@@ -10,11 +10,6 @@ map <Leader>kc :call Comment()<CR>
 map <Leader>ku :call Uncomment()<CR>
 map <F1> :setlocal spell! spelllang=en_us<CR>
 
-" Easy Motion Remappings
-map <Leader><Leader> <Plug>(easymotion-prefix)
-map <Leader><Leader>k <Plug>(easymotion-j)
-map <Leader><Leader>h <Plug>(easymotion-k)
-
 """"""""""""""""""""""""
 " Normal Mode Remappings
 """"""""""""""""""""""""

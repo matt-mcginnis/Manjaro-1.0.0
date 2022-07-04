@@ -24,6 +24,8 @@
  Plug 'matt-mcginnis/vim-snippets'
  Plug 'mhinz/vim-startify'
  Plug 'kevinhwang91/rnvimr'
+ Plug 'justinmk/vim-sneak'
+ Plug 'mhinz/vim-signify'
   
  " Initialize plugin system
  call plug#end()
