@@ -10,16 +10,16 @@ map <Leader>kc :call Comment()<CR>
 map <Leader>ku :call Uncomment()<CR>
 map <F1> :setlocal spell! spelllang=en_us<CR>
 
+" Easy Uppercase
+inoremap <c-u> <ESC>viwUi
+nnoremap <c-u> viwUi<ESC>
+
 """"""""""""""""""""""""
 " Normal Mode Remappings
 """"""""""""""""""""""""
 " Moving Between Buffers
 nnoremap <TAB> :bnext<CR>
 nnoremap <S-TAB> :bprevious<CR>
-
-" Easy Uppercase
-inoremap <c-u> <ESC>viwUi
-nnoremap <c-u> viwUi<ESC>
 
 " Remapping Movement Keys
 nnoremap h k
@@ -39,6 +39,9 @@ nnoremap <Leader>mt H
 nnoremap <Leader>mm M
 nnoremap <Leader>mb L
 nnoremap <Leader>mc zz
+
+" Remove Buffers
+nnoremap <Leader>bd :bdelete<CR>
 
 " Command
 nnoremap <Leader>c :
