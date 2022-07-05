@@ -22,3 +22,7 @@ source ~/.config/nvim/scripts/comments.vim
 
 " Source Custom Keybindings
 source ~/.config/nvim/keymaps/keymaps.vim
+
+" Source fuzzy-finder configuration after keymaps (potentially conflicting
+" keybinginds
+source ~/.config/nvim/plugs/plugs-config/fuzzy-finder.vim
