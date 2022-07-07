@@ -10,16 +10,9 @@ map <Leader>kc :call Comment()<CR>
 map <Leader>ku :call Uncomment()<CR>
 map <F1> :setlocal spell! spelllang=en_us<CR>
 
-" Easy Uppercase
-inoremap <c-u> <ESC>viwUi
-nnoremap <c-u> viwUi<ESC>
-
 """"""""""""""""""""""""
 " Normal Mode Remappings
 """"""""""""""""""""""""
-" Moving Between Buffers
-nnoremap <TAB> :bnext<CR>
-nnoremap <S-TAB> :bprevious<CR>
 
 " Remapping Movement Keys
 nnoremap h k
@@ -42,13 +35,11 @@ nnoremap <Leader>mc zz
 
 " Remove Buffers
 nnoremap <Leader>bd :bdelete<CR>
-
-" Command
-nnoremap <Leader>c :
-nnoremap <Leader>C :!
+nnoremap <Leader>bl :bnext<CR>
+nnoremap <Leader>bj :bprevious<CR>
 
 " Ranger
-nmap <Leader>d :RnvimrToggle<CR>
+nmap <Leader>r :RnvimrToggle<CR>
 
 " Firefox Shortcut
 nnoremap <Leader>ef :!firefox
@@ -58,9 +49,6 @@ nnoremap <Leader>ep :!python
 
 " Ranger Shortcut
 nnoremap <Leader>er :!ranger
-
-" Folds
-nnoremap <Leader>f z
 
 " Fugitive Shortcuts
 nnoremap <Leader>ga :Git add
@@ -81,12 +69,10 @@ nnoremap <Leader>j %
 nnoremap <Leader>ll :VimtexCompile<CR>
 
 " Quit
-nnoremap <Leader>qq :q<CR>
-nnoremap <Leader>qQ :q!<CR>
+nnoremap <CR>q :q<CR>
+nnoremap <CR>Q :q!<CR>
 
 " Recording Macros
-nnoremap <Leader>r q
-nnoremap q <Nop>
 nnoremap ' @
 
 " Split Window Commands
@@ -129,8 +115,8 @@ nnoremap <Leader>tj gT
 " Remapping visual block
 nnoremap <Leader>v <C-v>
 
-nnoremap <Leader>ww :w<CR>
-nnoremap <Leader>wW :wq<CR>
+nnoremap <CR>w :w<CR>
+nnoremap <CR>wW :wq<CR>
 
 """"""""""""""""""""""""
 " Visual Mode Remappings
@@ -162,9 +148,6 @@ xnoremap <Leader>mc zz
 " Remapping paste to retain yanked content
 xnoremap p pgvy
 xnoremap P Pgvy
-
-" Folds
-xnoremap <Leader>f z
 
 " Match Parentheses/Brackets
 xnoremap <Leader>j %
