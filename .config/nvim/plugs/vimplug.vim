@@ -25,6 +25,7 @@
  Plug 'mhinz/vim-startify'
  Plug 'kevinhwang91/rnvimr'
  Plug 'justinmk/vim-sneak'
+ Plug 'unblevable/quick-scope'
  Plug 'mhinz/vim-signify'
  Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
  Plug 'junegunn/fzf.vim'

@@ -16,6 +16,7 @@ let g:which_key_use_floating_win=0
 " Single Mappings
 let g:which_key_map['r'] = [ ':RnvimrToggle'    , 'Ranger']
 let g:which_key_map['j'] = [ '%'                , 'Jump']
+let g:which_key_map['n'] = [ ':Startify'        , 'Startify']
 let g:which_key_map['v'] = [ '<C-v>'            , 'Visual Block']
 
 " b is for buffers
@@ -32,6 +33,16 @@ let g:which_key_map.e = {
         \ 'f' : [':!firefox'        , 'Firefox'],
         \ 'p' : [':!python'         , 'Python'],
         \ 'r' : [':!ranger'         , 'Ranger']
+      \ }
+
+" f is for find
+let g:which_key_map.f = {
+        \ 'name' : '+Find',
+        \ 'f' : [':Files'       , 'Files'],
+        \ 'b' : [':Buffers'     , 'Buffers'],
+        \ 'g' : [':Rg'          , 'All'],
+        \ 't' : [':Tags'        , 'Tags'],
+        \ 'm' : [':Marks'       , 'Marks']
       \ }
 
 " g is for git
@@ -97,17 +108,17 @@ let g:which_key_map.w = {
         \ 'name' : '+Windows',
         \ 'd' : [':wincmd c'            , 'Close'],
         \ 'o' : [':wincmd o'            , 'Close Others'],
-        \ 'h' : ['wincmd k'             , 'Down'],
-        \ 'k' : ['wincmd j'             , 'Left'],
-        \ 'j' : ['wincmd h'             , 'Up'],
-        \ 'l' : ['wincmd l'             , 'Right'],
-        \ 'H' : ['wincmd K'             , 'Move Down'],
-        \ 'K' : ['wincmd J'             , 'Move Right'], 
-        \ 'J' : ['wincmd H'             , 'Move Up'],
-        \ 'L' : ['wincmd L'             , 'Move Right'],
-        \ '-' : ['resize -2'            , 'Decrease Height'],
-        \ '=' : ['resize +2'            , 'Increase Height'],
-        \ ',' : ['vertical resize -2'   , 'Decrease Width'],
-        \ '.' : ['vertical resize +2'   , 'Increase Width'],
-        \ 'u' : ['split#'               , 'Reopen Last Closed']
+        \ 'h' : [':wincmd k'             , 'Down'],
+        \ 'k' : [':wincmd j'             , 'Left'],
+        \ 'j' : [':wincmd h'             , 'Up'],
+        \ 'l' : [':wincmd l'             , 'Right'],
+        \ 'H' : [':wincmd K'             , 'Move Down'],
+        \ 'K' : [':wincmd J'             , 'Move Right'], 
+        \ 'J' : [':wincmd H'             , 'Move Up'],
+        \ 'L' : [':wincmd L'             , 'Move Right'],
+        \ '-' : [':resize -2'            , 'Decrease Height'],
+        \ '=' : [':resize +2'            , 'Increase Height'],
+        \ ',' : [':vertical resize -2'   , 'Decrease Width'],
+        \ '.' : [':vertical resize +2'   , 'Increase Width'],
+        \ 'u' : [':split#'               , 'Reopen Last Closed']
       \ }
