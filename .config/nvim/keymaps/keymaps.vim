@@ -10,6 +10,9 @@ map <Leader>kc :call Comment()<CR>
 map <Leader>ku :call Uncomment()<CR>
 map <F1> :setlocal spell! spelllang=en_us<CR>
 
+nmap <TAB> :bnext<CR>
+nmap <S-TAB> :bprevious<CR>
+
 """"""""""""""""""""""""
 " Normal Mode Remappings
 """"""""""""""""""""""""
@@ -28,18 +31,10 @@ nnoremap gJ g0
 nnoremap gk gj
 nnoremap gh gk
 
-nnoremap <Leader>mt H
-nnoremap <Leader>mm M
-nnoremap <Leader>mb L
-nnoremap <Leader>mc zz
-
 " Remove Buffers
 nnoremap <Leader>bd :bdelete<CR>
 nnoremap <Leader>bl :bnext<CR>
 nnoremap <Leader>bj :bprevious<CR>
-
-" Ranger
-nmap <Leader>r :RnvimrToggle<CR>
 
 " Firefox Shortcut
 nnoremap <Leader>ef :!firefox
@@ -68,12 +63,18 @@ nnoremap <Leader>j %
 " TexLive Compilation
 nnoremap <Leader>ll :VimtexCompile<CR>
 
+" Scroll Motions
+nnoremap <Leader>mt H
+nnoremap <Leader>mm M
+nnoremap <Leader>mb L
+nnoremap <Leader>mc zz
+
 " Quit
 nnoremap <CR>q :q<CR>
 nnoremap <CR>Q :q!<CR>
 
-" Recording Macros
-nnoremap ' @
+" Ranger
+nmap <Leader>r :RnvimrToggle<CR>
 
 " Split Window Commands
 nnoremap <Leader>wd :wincmd c<CR>
@@ -116,7 +117,10 @@ nnoremap <Leader>tj gT
 nnoremap <Leader>v <C-v>
 
 nnoremap <CR>w :w<CR>
-nnoremap <CR>wW :wq<CR>
+nnoremap <CR>W :wq<CR>
+
+" Executing Macros
+nnoremap ' @
 
 """"""""""""""""""""""""
 " Visual Mode Remappings
