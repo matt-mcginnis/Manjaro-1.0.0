@@ -105,14 +105,6 @@ nnoremap <Leader>s. ]s
 nnoremap <Leader>s, [s
 nnoremap <Leader>sc z=
 
-" Tab Commands
-nnoremap <Leader>tn :tabnew
-nnoremap <Leader>td :tabclose<CR>
-nnoremap <Leader>t. :tabm +1<CR>
-nnoremap <Leader>t, :tabm -1<CR>
-nnoremap <Leader>tl gt
-nnoremap <Leader>tj gT
-
 " Remapping visual block
 nnoremap <Leader>v <C-v>
 

@@ -9,6 +9,7 @@ source ~/.config/nvim/plugs/vimplug.vim
 source ~/.config/nvim/plugs/plugs-config/start-screen.vim
 source ~/.config/nvim/plugs/plugs-config/rnvimr.vim
 source ~/.config/nvim/plugs/plugs-config/airline.vim
+source ~/.config/nvim/plugs/plugs-config/floaterm.vim
 
 " Source Completion and Snippets
 source ~/.config/nvim/completion/completion.vim

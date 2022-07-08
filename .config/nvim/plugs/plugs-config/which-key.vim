@@ -92,15 +92,14 @@ let g:which_key_map.s = {
         \ 'c' : ['z='       , 'Spelling Suggestions']
       \ }
 
-" t is for tabs
+" t is for terminal
 let g:which_key_map.t = {
-        \ 'name' : '+Tabs',
-        \ 'n' : [':tabnew'          , 'New'],
-        \ 'd' : [':tabclose<CR>'    , 'Close'],
-        \ '.' : [':tabm +1<CR>'     , 'Move Right'],
-        \ ',' : [':tabm -1<CR>'     , 'Move Left'],
-        \ 'l' : ['gt'               , 'Next'],
-        \ 'j' : ['gT'               , 'Prev']
+        \ 'name' : '+Terminal',
+        \ 't' : [':FloatermToggle'    , 'Toggle'],
+        \ 'n' : [':FloatermNew'       , 'New'],
+        \ 'l' : [':FloatermNext'      , 'Next'],
+        \ 'j' : [':FloatermPrev'      , 'Prev'],
+        \ 'd' : [':FloatermKill'      , 'Close']
       \ }
 
 " w is for split windows

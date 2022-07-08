@@ -31,6 +31,7 @@
  Plug 'junegunn/fzf.vim'
  Plug 'airblade/vim-rooter'
  Plug 'liuchengxu/vim-which-key'
+ Plug 'voldikss/vim-floaterm'
   
  " Initialize plugin system
  call plug#end()
