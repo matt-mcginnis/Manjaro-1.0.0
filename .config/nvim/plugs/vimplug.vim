@@ -16,10 +16,10 @@
  
  Plug 'vim-airline/vim-airline'
  Plug 'vim-airline/vim-airline-themes'
+ Plug 'easymotion/vim-easymotion'
  Plug 'tpope/vim-fugitive'
  Plug 'lervag/vimtex'
  Plug 'dylanaraps/wal.vim'
- Plug 'ryanoasis/vim-devicons'
  Plug 'neoclide/coc.nvim', {'branch': 'release'}
  Plug 'matt-mcginnis/vim-snippets'
  Plug 'mhinz/vim-startify'
