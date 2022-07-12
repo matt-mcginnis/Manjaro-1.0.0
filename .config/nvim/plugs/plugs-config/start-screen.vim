@@ -28,3 +28,5 @@ let g:startify_custom_header = [
         	\'           ░    ░  ░    ░ ░        ░   ░         ░   ',
         	\'                                  ░ 				   '
 	  \ ]
+
+nmap <leader>st :Startify<CR>

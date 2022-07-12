@@ -70,8 +70,8 @@ nnoremap <Leader>mb L
 nnoremap <Leader>mc zz
 
 " Quit
-nnoremap <CR>q :q<CR>
-nnoremap <CR>Q :q!<CR>
+nnoremap <Leader>qq :q<CR>
+nnoremap <Leader>qQ :q!<CR>
 
 " Ranger
 nmap <Leader>r :RnvimrToggle<CR>
@@ -108,8 +108,8 @@ nnoremap <Leader>sc z=
 " Remapping visual block
 nnoremap <Leader>v <C-v>
 
-nnoremap <CR>w :w<CR>
-nnoremap <CR>W :wq<CR>
+nnoremap <Leader>ww :w<CR>
+nnoremap <Leader>wW :wq<CR>
 
 " Executing Macros
 nnoremap ' @

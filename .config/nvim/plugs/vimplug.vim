@@ -24,7 +24,6 @@
  Plug 'matt-mcginnis/vim-snippets'
  Plug 'mhinz/vim-startify'
  Plug 'kevinhwang91/rnvimr'
- Plug 'justinmk/vim-sneak'
  Plug 'unblevable/quick-scope'
  Plug 'mhinz/vim-signify'
  Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -32,6 +31,10 @@
  Plug 'airblade/vim-rooter'
  Plug 'liuchengxu/vim-which-key'
  Plug 'voldikss/vim-floaterm'
+ Plug 'preservim/nerdtree'
+ Plug 'ryanoasis/vim-devicons'
+ Plug 'Xuyuanp/nerdtree-git-plugin'
+ Plug 'PhilRunninger/nerdtree-visual-selection'
   
  " Initialize plugin system
  call plug#end()

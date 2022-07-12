@@ -1,0 +1,24 @@
+{
+    "coc.preferences.formatOnSaveFiletypes": [
+        "html",
+        "json",
+        "python"
+    ],
+    // Python Config
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": true,
+    "snippets.ultisnips.directories": [
+        "UltiSnips",
+        "~/.config/nvim/plugs/plugged/vim-snippets/UltiSnips"
+    ],
+    "languageserver": {
+        "digestif": {
+            "command": "~/.luarocks/bin/digestif",
+            "filetypes": [
+                "tex",
+                "plaintex",
+                "context"
+            ]
+        }
+    }
+}

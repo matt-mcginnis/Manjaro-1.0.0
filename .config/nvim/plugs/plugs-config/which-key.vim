@@ -1,4 +1,4 @@
-" Map leader to which-key
+" Mapsymotion-prefix) leader to which-key
 nnoremap <silent> <leader> :silent WhichKey '<Space>'<CR>
 vnoremap <silent> <leader> :silent <c-u> :silent WhichKeyVisual '<Space>'<CR>
 
@@ -16,7 +16,6 @@ let g:which_key_use_floating_win=0
 " Single Mappings
 let g:which_key_map['r'] = [ ':RnvimrToggle'    , 'Ranger']
 let g:which_key_map['j'] = [ '%'                , 'Jump']
-let g:which_key_map['n'] = [ ':Startify'        , 'Startify']
 let g:which_key_map['v'] = [ '<C-v>'            , 'Visual Block']
 
 " b is for buffers
@@ -25,6 +24,13 @@ let g:which_key_map.b = {
         \ 'd' : [':bdelete'         , 'Close'],
         \ 'l' : [':bnext'           , 'Next'],
         \ 'j' : [':bprevious'       , 'Prev']
+      \ }
+
+let g:which_key_map.c = {
+        \ 'name' : '+Completion',
+        \ 'c' : [':CocConfig'           , 'Config'],
+        \ 'l' : [':CocList'             , 'List'],
+        \ 'm' : [':CocList marketplace' , 'Marketplace']
       \ }
 
 " e is for execution
@@ -82,14 +88,29 @@ let g:which_key_map.m = {
         \ 'c' : ['zz'    , 'Center Screen'],
       \ }
 
+let g:which_key_map.n = {
+        \ 'name' : '+NerdTree',
+        \ 'f' : [':NERDTreeFocus'       , 'Focus'],
+        \ 'n' : [':NERDTree'            , 'Open'],
+        \ 't' : [':NERDTreeToggle'      , 'Toggle'],
+        \ 'F' : [':NERDTreeFind'       , 'Find']
+      \ }
+
+let g:which_key_map.q = {
+        \ 'name' : '+Quit',
+        \ 'q' : [':q'   , 'Quit'],
+        \ 'Q' : [':q!'  , 'Quit No Save']
+      \ }
+
 " s is for Spellcheck and new splits
 let g:which_key_map.s = {
-        \ 'name' : '+Split/Spell',
-        \ 'h' : [':split'   , 'Horizontal Split'],
-        \ 'v' : [':vsplit'  , 'Vertical Split'],
-        \ '.' : [']s'       , 'Next Misspelling'],
-        \ ',' : ['[s'       , 'Prev Misspelling'],
-        \ 'c' : ['z='       , 'Spelling Suggestions']
+        \ 'name' : '+/Split/Start/Spell',
+        \ 'h' : [':split'       , 'Horizontal Split'],
+        \ 'v' : [':vsplit'      , 'Vertical Split'],
+        \ '.' : [']s'           , 'Next Misspelling'],
+        \ ',' : ['[s'           , 'Prev Misspelling'],
+        \ 'c' : ['z='           , 'Spelling Suggestions'],
+        \ 't' : [':Startify'    , 'Startify']
       \ }
 
 " t is for terminal
@@ -119,5 +140,7 @@ let g:which_key_map.w = {
         \ '=' : [':resize +2'            , 'Increase Height'],
         \ ',' : [':vertical resize -2'   , 'Decrease Width'],
         \ '.' : [':vertical resize +2'   , 'Increase Width'],
-        \ 'u' : [':split#'               , 'Reopen Last Closed']
+        \ 'u' : [':split#'               , 'Reopen Last Closed'],
+        \ 'w' : [':w'                    , 'Save'],
+        \ 'W' : [':w'                    , 'Save and Close']
       \ }
