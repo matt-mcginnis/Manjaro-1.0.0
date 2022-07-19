@@ -38,6 +38,9 @@ git config --global core.editor "nvim"
 # Install base-devel
 sudo pacman -S base-devel
 
+# Install vs code
+sudo pacman -S code
+
 # Install Docker
 sudo pacman -S docker
 
@@ -84,6 +87,9 @@ cd yay-git
 makepkg -si
 cd ..
 sudo rm -rf yay-git
+
+# Install code-features
+yay -S code-features
 
 #############################
 ##### Install Oh-My-Zsh #####
