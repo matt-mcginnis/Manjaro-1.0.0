@@ -253,13 +253,6 @@
             ]
         },
         {
-            "before": ["<leader>", "l", "t"],
-            "after": [],
-            "commands": [
-                { "command": "workbench.action.toggleEditorGroupLayout", "args": [] }
-            ]
-        },
-        {
             "before": ["<leader>", "m", "t"],
             "after": ["H"]
         },
@@ -416,6 +409,13 @@
             "after": [],
             "commands": [
                 { "command": "workbench.action.minimizeOtherEditors", "args": [] }
+            ]
+        },
+        {
+            "before": ["<leader>", "w", "t"],
+            "after": [],
+            "commands": [
+                { "command": "workbench.action.toggleEditorGroupLayout", "args": [] }
             ]
         },
         {
