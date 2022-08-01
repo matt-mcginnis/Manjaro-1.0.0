@@ -38,6 +38,12 @@
 20) Install Touchegg for gestures:
     https://github.com/JoseExposito/touchegg#arch-linux-manjaro-and-derivatives
 
+EMACS
+sudo pacman -S emacs-nativecomp
+sudo pacman -S shellcheck
+sudo pacman -S fd
+
+
 Nvim Setup
 1) Run pip install pynvim --upgrade
 2) Run :CocInstall coc-snippets
