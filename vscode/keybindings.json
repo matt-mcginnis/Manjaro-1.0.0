@@ -59,7 +59,7 @@
         "command": "workbench.action.focusActiveEditorGroup"
     },
     {
-        "key": "alt+p",
+        "key": "alt+c",
         "command": "workbench.action.quickOpen"
     },
     {
@@ -67,7 +67,7 @@
         "command": "-workbench.action.quickOpen"
     },
     {
-        "key": "alt+shift+p",
+        "key": "shift+alt+c",
         "command": "workbench.action.showCommands"
     },
     {
@@ -230,7 +230,7 @@
         "command": "workbench.action.toggleMaximizedPanel"
     },
     {
-        "key": "alt+t",
+        "key": "alt+p",
         "command": "workbench.action.focusPanel"
     },
     {
