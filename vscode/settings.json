@@ -161,7 +161,7 @@
             "before": ["<leader>", "d", "b"],
             "after": [],
             "commands": [
-                { "command": "editor.debug.toggleBreakpoint", "args": [] }
+                { "command": "editor.debug.action.toggleBreakpoint", "args": [] }
             ]
         },
         {

@@ -1,7 +1,7 @@
 // Place your key bindings in this file to override the defaultsauto[]
 [
     {
-        "key": "alt+b",
+        "key": "alt+s",
         "command": "workbench.action.toggleSidebarVisibility"
     },
     {
@@ -126,10 +126,6 @@
         "command": "-workbench.action.openGlobalKeybindings"
     },
     {
-        "key": "alt+s",
-        "command": "workbench.action.openSettings"
-    },
-    {
         "key": "ctrl+,",
         "command": "-workbench.action.openSettings"
     },
@@ -236,5 +232,27 @@
     {
         "key": "alt+t",
         "command": "workbench.action.focusPanel"
+    },
+    {
+        "key": "ctrl+shift+-",
+        "command": "workbench.action.decreaseViewSize"
+    },
+    {
+        "key": "ctrl+shift+=",
+        "command": "-workbench.action.zoomIn"
+    },
+    {
+        "key": "ctrl+shift+=",
+        "command": "workbench.action.increaseViewSize"
+    },
+    {
+        "key": "alt+b",
+        "command": "workbench.view.debug",
+        "when": "viewContainer.workbench.view.debug.enabled"
+    },
+    {
+        "key": "ctrl+shift+d",
+        "command": "-workbench.view.debug",
+        "when": "viewContainer.workbench.view.debug.enabled"
     }
 ]
