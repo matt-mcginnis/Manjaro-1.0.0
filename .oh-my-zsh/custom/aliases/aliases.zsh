@@ -2,6 +2,9 @@
 ### Aliases ###
 ###############
 
+# Go Back a Directory
+alias b="cd .."
+
 # Docker Aliases
 alias di="docker images"
 alias dr="docker run"
@@ -23,7 +26,11 @@ alias ef="firefox"
 alias ep="python"
 alias er="ranger"
 
+# Python Aliases
+alias py="python"
+
 # Vim Aliases
 alias nv="nvim"
 
-plugins=(zsh-vi-mode zsh-autosuggestions zsh-syntax-highlighting)
+# Ranger Aliases
+alias r="ranger"
