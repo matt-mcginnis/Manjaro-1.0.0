@@ -2,7 +2,6 @@
     "workbench.colorTheme": "Gruvbox Dark Medium",
     "security.workspace.trust.untrustedFiles": "open",
     "keyboard.dispatch": "keyCode",
-    "editor.lineNumbers": "relative",
     "zenMode.centerLayout": false,
     "zenMode.hideLineNumbers": false,
     "latex-workshop.latex.build.forceRecipeUsage": false,
@@ -526,6 +525,14 @@
         {
             "before": ["<leader>", "v"],
             "after": ["<c-v>"]
+        },
+        {
+            "before": ["<"],
+            "after": ["<", "g", "v"]
+        },
+        {
+            "before": [">"],
+            "after": [">", "g", "v"]
         }
     ]
 }
