@@ -534,5 +534,13 @@
             "before": [">"],
             "after": [">", "g", "v"]
         }
+    ],
+    "jupyter.diagnostics.reservedPythonNames.exclude": [
+        "**/site-packages/**",
+        "**/lib/python/**",
+        "**/lib64/python/**",
+        "/home/matt/Github/syndio-backend-engineer-app-solution/DataClasses.py",
+        "/home/matt/Github/syndio-backend-engineer-app-solution/Solution.py",
+        "/home/matt/Github/syndio-backend-engineer-app-solution/Endpoints.py"
     ]
 }
