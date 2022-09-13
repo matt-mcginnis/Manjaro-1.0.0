@@ -333,6 +333,13 @@
             ]
         },
         {
+            "before": ["<leader>", "s", "c"],
+            "after": [],
+            "commands": [
+                { "command": "cSpell.toggleEnableSpellChecker", "args": [] }
+            ]
+        },
+        {
             "before": ["<leader>", "v"],
             "after": ["<c-v>"]
         },
@@ -427,6 +434,13 @@
         {
             "before": ["'"],
             "after": ["@"]
+        },
+        {
+            "before": ["<leader>", "."],
+            "after": [],
+            "commands": [
+                { "command": "editor.action.quickFix", "args": [], "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly" }
+            ]
         }
     ],
     "vim.visualModeKeyBindingsNonRecursive": [
@@ -542,5 +556,6 @@
         "/home/matt/Github/syndio-backend-engineer-app-solution/DataClasses.py",
         "/home/matt/Github/syndio-backend-engineer-app-solution/Solution.py",
         "/home/matt/Github/syndio-backend-engineer-app-solution/Endpoints.py"
-    ]
+    ],
+    "cSpell.enabled": false
 }

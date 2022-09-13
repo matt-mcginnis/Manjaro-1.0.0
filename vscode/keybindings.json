@@ -269,5 +269,10 @@
         "key": "space",
         "command": "-filesExplorer.openFilePreserveFocus",
         "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsFolder && !inputFocus"
+    },
+    {
+        "key": "ctrl+shift+e",
+        "command": "sqlite.runSelectedQuery",
+        "when": "editorLangId =~ /(sql|sqlite)/"
     }
 ]
