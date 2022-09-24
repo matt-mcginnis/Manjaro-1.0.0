@@ -297,11 +297,11 @@
             "after": ["<leader>", "<leader>", "j"]
         },
         {
-            "before": ["s", "w"],
+            "before": ["s", "m"],
             "after": ["<leader>", "<leader>", "w"]
         },
         {
-            "before": ["s", "b"],
+            "before": ["s", "n"],
             "after": ["<leader>", "<leader>", "b"]
         },
         {
@@ -330,6 +330,34 @@
             "after": [],
             "commands": [
                 { "command": "workbench.action.splitEditorRight", "args": [] }
+            ]
+        },
+        {
+            "before": ["<leader>", "s", "H"],
+            "after": [],
+            "commands": [
+                { "command": "workbench.action.moveEditorToAboveGroup", "args": [] }
+            ]
+        },
+        {
+            "before": ["<leader>", "s", "K"],
+            "after": [],
+            "commands": [
+                { "command": "workbench.action.moveEditorToBelowGroup", "args": [] }
+            ]
+        },
+        {
+            "before": ["<leader>", "s", "J"],
+            "after": [],
+            "commands": [
+                { "command": "workbench.action.moveEditorToLeftGroup", "args": [] }
+            ]
+        },
+        {
+            "before": ["<leader>", "s", "L"],
+            "after": [],
+            "commands": [
+                { "command": "workbench.action.moveEditorToRightGroup", "args": [] }
             ]
         },
         {
@@ -557,5 +585,6 @@
         "/home/matt/Github/syndio-backend-engineer-app-solution/Solution.py",
         "/home/matt/Github/syndio-backend-engineer-app-solution/Endpoints.py"
     ],
+    "editor.lineNumbers": "relative",
     "cSpell.enabled": false
 }
